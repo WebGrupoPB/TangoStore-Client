@@ -1,0 +1,909 @@
+@font-face {
+    font-family: 'Moderat';
+    src: url('../assets/fonts/Moderat-Regular.ttf') format('truetype');
+  }
+
+$white: #fff;
+
+:root {
+	margin: 0;
+	padding: 0;
+	font: {
+		family: 'Moderat';
+	}
+}
+
+
+html,
+body, 
+#app {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	position: relative;
+	animation: fadeIn 700ms ease-in-out forwards;
+}
+
+
+section.wrapper {
+    position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: background-image 700ms ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: transparent;
+}
+
+aside.panel {
+    position: absolute;
+	right: 0;
+	width: 40vw;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	opacity: 0.8;
+	transition: background 700ms ease-in-out;
+
+	
+	div.redesEmpleo {
+        /* background-color: rgba(0, 0, 0, 1) !important; */
+		opacity: 1;
+        width: 15vw;
+        height: 18vh;
+        border-radius: 10px;
+		border: 4px solid rgb(252, 193, 44);
+
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+
+        h5 {
+			position: relative;
+			/* bottom: 1.5rem; */
+            color: rgb(252, 193, 44);
+            font-size: 1.5rem;
+        }
+
+        div {
+			position: relative;
+			bottom: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 3vw;
+                height: auto;
+                margin: 0 0.25vw;
+            }
+        }
+    }
+
+	.promotion-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	  }
+	  
+	
+	h1.promotionText {
+		color: rgb(252,  193, 44);
+		font-family: 'Arial Black';
+		font-size: 4rem;
+		line-height: 75px;
+		-webkit-text-fill-color: rgb(252,  193, 44); 
+		-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
+  		-webkit-text-stroke-color: #fff;
+	}
+	
+	h2.panel-header,
+	p.panel-info {
+		color: #000;
+		margin: 0;
+		padding: 0rem 3.5rem;
+	}
+
+	h2.panel-header {
+		color: #000;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font: {
+			weight: bolder;
+			size: 2.5rem;
+		}
+		text-transform: capitalize;
+	}
+	p.panel-info {
+		font: {
+			size: 1.2rem;
+		}
+		line-height: 1.5em;
+	}
+
+	table.panel-table {
+		color: #000;
+		position: relative;
+		left: 2rem;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+div.lineDecoration { 
+	position: absolute;
+	right: 45%;
+	background-color: rgb(252,  193, 44);
+	width: 5px;
+	height: 90%;
+}
+
+
+
+/*************** Pantallas Desktop/Tv o mayores 1440px *******************/
+@media (min-width: 1441px) {
+	section.wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		transition: background-image 700ms ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	aside.panel {
+		position: absolute;
+		right: 0;
+		width: 40vw;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0.8;
+		transition: background 700ms ease-in-out;
+	
+		
+		div.redesEmpleo {
+			border: 8px solid rgb(252, 193, 44);
+
+	
+			h5 {
+				position: relative;
+				font-size: 3rem;
+			}
+	
+			div {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				img {
+					width: 3vw;
+					height: auto;
+					margin: 0 0.25rem;
+				}
+			}
+		}
+	
+		.promotion-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		  }
+		  
+		
+		h1.promotionText {
+			font-size: 8rem;
+			line-height: 150px;			
+			-webkit-text-stroke-width: 4px; 
+			 
+		}
+		
+		h2.panel-header,
+		p.panel-info {
+			color: #000;
+			margin: 0;
+			padding: 0rem 3.5rem;
+		}
+	
+		h2.panel-header {
+			color: #000;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			font: {
+				weight: bolder;
+				size: 5rem;
+			}
+			text-transform: capitalize;
+		}
+		p.panel-info {
+			font: {
+				size: 2.2rem;
+			}
+			line-height: 1.5em;
+		}
+	
+		table.panel-table {
+			color: #000;
+			position: relative;
+			left: 4rem;
+		}
+
+		.img-table {
+			width: 2.25vw;
+			height: auto;
+		}
+	}
+
+	div.lineDecoration { 
+		width: 10px;
+	}
+
+	.tangoLogo-empleos {
+		width: 50%;
+		height: auto;
+	}
+}
+
+
+/*************** Pantallas Laptop,  1024px *******************/
+@media (max-width: 1024px) {
+	section.wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		transition: background-image 700ms ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	aside.panel {
+		position: absolute;
+		right: 0;
+		width: 40vw;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0.8;
+		transition: background 700ms ease-in-out;
+	
+		
+		div.redesEmpleo {
+			/* background-color: rgba(0, 0, 0, 1) !important; */
+			opacity: 1;
+			width: 15vw;
+			height: 18vh;
+			border-radius: 10px;
+			border: 4px solid rgb(252, 193, 44);
+	
+			position: absolute;
+			left: 10%;
+			bottom: 5%;
+	
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: end;
+	
+			h5 {
+				position: relative;
+				/* bottom: 1.5rem; */
+				color: rgb(252, 193, 44);
+				font-size: 1.2rem;
+			}
+	
+			div {
+				position: relative;
+				bottom: 3vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				img {
+					width: 3vw;
+					height: auto;
+					margin: 0 0.25vw;
+				}
+			}
+		}
+	
+		.promotion-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		  }
+		  
+		
+		h1.promotionText {
+			color: rgb(252,  193, 44);
+			font-family: 'Arial Black';
+			font-size: 3.5rem;
+			line-height: 75px;
+			-webkit-text-fill-color: rgb(252,  193, 44); 
+			-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
+			  -webkit-text-stroke-color: #fff;
+		}
+		
+		h2.panel-header,
+		p.panel-info {
+			color: #000;
+			margin: 0;
+			padding: 0rem 3.5rem;
+		}
+	
+		h2.panel-header {
+			color: #000;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			font: {
+				weight: bolder;
+				size: 1.8rem;
+			}
+			text-transform: capitalize;
+		}
+		p.panel-info {
+			font: {
+				size: 1rem;
+			}
+			line-height: 1.5em;
+		}
+	
+		table.panel-table {
+			color: #000;
+			position: relative;
+			left: 2rem;
+		}
+
+		/* .img-table {
+			width: 2.25vw;
+			height: auto;
+		} */
+	}
+
+	div.lineDecoration { 
+		width: 5px;
+	}
+
+	.tangoLogo-empleos {
+		width: 50%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+/*************** Pantallas tablet, 768px *******************/
+@media (max-width: 950px) {
+	section.wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		transition: background-image 700ms ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	aside.panel {
+		position: absolute;
+		right: 0;
+		width: 45vw;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0.8;
+		transition: background 700ms ease-in-out;
+	
+		
+		div.redesEmpleo {
+			/* background-color: rgba(0, 0, 0, 1) !important; */
+			opacity: 1;
+			width: 20vw;
+			height: 10vh;
+			border-radius: 10px;
+			border: 4px solid rgb(252, 193, 44);
+	
+			position: absolute;
+			left: 10%;
+			bottom: 5%;
+	
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: end;
+	
+			h5 {
+				position: relative;
+				/* bottom: 1.5rem; */
+				color: rgb(252, 193, 44);
+				font-size: 1.2rem;
+			}
+	
+			div {
+				position: relative;
+				bottom: 1.5vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				img {
+					width: 4vw;
+					height: auto;
+					margin: 0 0.25vw;
+				}
+			}
+		}
+	
+		.promotion-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		  }
+		  
+		
+		h1.promotionText {
+			color: rgb(252,  193, 44);
+			font-family: 'Arial Black';
+			font-size: 3rem;
+			line-height: 60px;
+			-webkit-text-fill-color: rgb(252,  193, 44); 
+			-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
+			  -webkit-text-stroke-color: #fff;
+		}
+		
+		h2.panel-header,
+		p.panel-info {
+			color: #000;
+			margin: 0;
+			padding: 0rem 3.5rem;
+		}
+	
+		h2.panel-header {
+			color: #000;
+			padding-top: 1em;
+			padding-bottom: 0.5rem;
+			font: {
+				weight: bolder;
+				size: 2rem;
+			}
+			text-transform: capitalize;
+		}
+		p.panel-info {
+			font: {
+				size: .9rem;
+			}
+			line-height: 1.8em;
+		}
+	
+		table.panel-table {
+			color: #000;
+			position: relative;
+			left: 2rem;
+		}
+
+		/* .img-table {
+			width: 2.25vw;
+			height: auto;
+		} */
+	}
+
+	div.lineDecoration { 
+		position: absolute;
+		right: 50%;
+		width: 5px;
+	}
+
+	.tangoLogo-empleos {
+		width: 45%;
+		height: auto;
+	}
+}
+
+
+
+/*************** Pantallas moviles L/M/S, 425px *******************/
+@media (max-width: 600px) {
+	section.wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+
+	aside.panel {
+		position: relative;
+		left: 0;
+		width: 90%;
+		height: 90%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0.8;
+		transition: background 700ms ease-in-out;
+		margin: 0 auto;
+	
+		
+		div.redesEmpleo {
+			/* background-color: rgba(0, 0, 0, 1) !important; */
+			opacity: 1;
+			width: 12rem;
+			height: 7rem;
+			border-radius: 10px;
+			border: 4px solid rgb(252, 193, 44);
+	
+			position: absolute;
+			left: 10%;
+			bottom: 5%;
+	
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: right;
+	
+			h5 {
+				position: absolute;
+				top: 0;
+				color: rgb(252, 193, 44);
+				font-size: 1rem;
+			}
+	
+			div {
+				position: absolute;
+				bottom: 1.25rem;
+				left: 1.25rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				img {
+					width: 50%;
+					height: auto;
+					margin: 0 0.25rem;
+				}
+			}
+		}
+	
+		.promotion-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		  }
+		  
+		
+		h1.promotionText {
+			color: rgb(252,  193, 44);
+			font-family: 'Arial Black';
+			font-size: 1rem;
+			line-height: 30px;
+			-webkit-text-fill-color: rgb(252,  193, 44); 
+			-webkit-text-stroke-width: 0px; /* Ajusta el valor según tus preferencias */
+			  -webkit-text-stroke-color: #fff;
+		}
+		
+		h2.panel-header,
+		p.panel-info {
+			color: #000;
+			margin: 0;
+			padding: 0rem 3.5rem;
+		}
+	
+		h2.panel-header {
+			color: #000;
+			padding-top: 1rem;
+			padding-bottom: 0.75rem;
+			font: {
+				weight: bolder;
+				size: 1.5rem;
+			}
+			text-transform: capitalize;
+		}
+		p.panel-info {
+			font: {
+				size: .9rem;
+			}
+			line-height: 1rem;
+		}
+	
+		table.panel-table {
+			color: #000;
+			position: relative;
+			left: 2rem;
+		}
+
+		/* .img-table {
+			width: 2.25vw;
+			height: auto;
+		} */
+	}
+
+	div.lineDecoration { 
+		display: none;
+	}
+
+	
+}
+
+/*************** Pantallas moviles talla S, 320px *******************/
+@media (max-width: 320px) {
+	section.wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+
+	aside.panel {
+		position: relative;
+		left: 0;
+		width: 90%;
+		height: 90%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0.8;
+		transition: background 700ms ease-in-out;
+		margin: 0 auto;
+	
+		
+		div.redesEmpleo {
+			/* background-color: rgba(0, 0, 0, 1) !important; */
+			opacity: 1;
+			width: 12rem;
+			height: 7rem;
+			border-radius: 10px;
+			border: 4px solid rgb(252, 193, 44);
+	
+			position: absolute;
+			left: 10%;
+			bottom: 5%;
+	
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: right;
+	
+			h5 {
+				position: absolute;
+				top: 0;
+				color: rgb(252, 193, 44);
+				font-size: 1rem;
+			}
+	
+			div {
+				position: absolute;
+				bottom: 1.25rem;
+				left: 1.25rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				img {
+					width: 50%;
+					height: auto;
+					margin: 0 0.25rem;
+				}
+			}
+		}
+	
+		.promotion-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		  }
+		  
+		
+		  h1.promotionText {
+			color: rgb(252,  193, 44);
+			font-family: 'Arial Black';
+			font-size: 1rem;
+			line-height: 30px;
+			-webkit-text-fill-color: rgb(252,  193, 44); 
+			-webkit-text-stroke-width: 0px; /* Ajusta el valor según tus preferencias */
+			  -webkit-text-stroke-color: #fff;
+		}
+		
+		h2.panel-header,
+		p.panel-info {
+			color: #000;
+			margin: 0;
+			padding: 0rem 3.5rem;
+		}
+	
+		h2.panel-header {
+			color: #000;
+			padding-top: 1em;
+			padding-bottom: 0.75rem;
+			font: {
+				weight: bolder;
+				size: 1.1rem;
+			}
+			text-transform: capitalize;
+		}
+		p.panel-info {
+			font: {
+				size: .6rem;
+			}
+			line-height: 1rem;
+		}
+	
+		table.panel-table {
+			color: #000;
+			position: relative;
+			left: 2rem;
+		}
+
+		.img-table {
+			width: 50%;
+			height: auto;
+		}
+	}
+
+	div.lineDecoration { 
+		display: none;
+	}
+}
+
+
+/*************** Pantallas tablet, por ALTURA 768px *******************/
+@media (min-height: 1350px) {
+	section.wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		transition: background-image 700ms ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	aside.panel {
+		position: absolute;
+		right: 0;
+		width: 45vw;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 0.8;
+		transition: background 700ms ease-in-out;
+	
+		
+		div.redesEmpleo {
+			/* background-color: rgba(0, 0, 0, 1) !important; */
+			opacity: 1;
+			width: 20vw;
+			height: 10vh;
+			border-radius: 10px;
+			border: 4px solid rgb(252, 193, 44);
+	
+			position: absolute;
+			left: 10%;
+			bottom: 5%;
+	
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: end;
+	
+			h5 {
+				position: relative;
+				/* bottom: 1.5rem; */
+				color: rgb(252, 193, 44);
+				font-size: 1.2rem;
+			}
+	
+			div {
+				position: relative;
+				bottom: 1.5vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+	
+				img {
+					width: 4vw;
+					height: auto;
+					margin: 0 0.25vw;
+				}
+			}
+		}
+	
+		.promotion-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		  }
+		  
+		
+		h1.promotionText {
+			color: rgb(252,  193, 44);
+			font-family: 'Arial Black';
+			font-size: 3rem;
+			line-height: 60px;
+			-webkit-text-fill-color: rgb(252,  193, 44); 
+			-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
+			  -webkit-text-stroke-color: #fff;
+		}
+		
+		h2.panel-header,
+		p.panel-info {
+			color: #000;
+			margin: 0;
+			padding: 0rem 3.5rem;
+		}
+	
+		h2.panel-header {
+			color: #000;
+			padding-top: 1em;
+			padding-bottom: 0.5rem;
+			font: {
+				weight: bolder;
+				size: 2rem;
+			}
+			text-transform: capitalize;
+		}
+		p.panel-info {
+			font: {
+				size: .9rem;
+			}
+			line-height: 1.8em;
+		}
+	
+		table.panel-table {
+			color: #000;
+			position: relative;
+			left: 2rem;
+		}
+
+		/* .img-table {
+			width: 2.25vw;
+			height: auto;
+		} */
+	}
+
+	div.lineDecoration { 
+		position: absolute;
+		right: 50%;
+		width: 5px;
+	}
+
+	.tangoLogo-empleos {
+		width: 45%;
+		height: auto;
+		margin: 5vh auto;
+	}
+}

@@ -1,0 +1,356 @@
+.totalCard {
+    width: 35vw;
+    height: 18vh;
+    border: 1px solid #BFBFBF;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    /* margin: 1rem 1rem; */
+}
+
+.tw-followCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: .8rem;
+    width: 34vw;
+    height: 18vh;
+  }
+
+  .tw-followCard div {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+  }
+  
+  .tw-followCard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0 1rem;
+    z-index: 0;
+    text-align: left;
+  }
+
+  .tw-followCard-header > div {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .tw-followCard-header > div > strong {
+    font-size: .9rem;
+  }
+
+  .tw-followCard-header span {
+    margin-top: .5rem;
+    font-size: .8rem;
+  }
+  
+ /*  .tw-followCard-info {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .tw-followCard-infoUserName {
+    opacity: .8;
+    margin-top: 0.5rem 0;
+    z-index: 0;
+  }
+  
+  .tw-followCard-avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+  
+  .tw-followCard-button {
+    background-color: #E53F15;
+    width: 8vw;
+    height: 10vh;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder; 
+    margin: 0 0.25rem;   
+  }
+  
+  .tw-followCard-button:hover {
+    opacity: .8;
+  }
+  
+  .tw-followCard-text {
+    display: block;
+  }
+  
+  /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
+  @media (min-width: 1441px) {
+  
+    .tw-followCard-header > div > strong {
+      font-size: 2rem;
+    }
+  
+    .tw-followCard-header span {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    
+   
+    .tw-followCard-avatar {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+    }
+    
+    .tw-followCard-button {   
+      font-size: 2rem; 
+      margin: 0 0.25rem;   
+    }
+    
+  }
+
+  /*************** Pantallas Laptop  1024px *******************/
+  @media (max-width: 1024px) {
+    .tw-followCard-header strong {
+      font-size: .9rem;
+    }
+  
+    .tw-followCard-header span {
+      margin-top: 0rem;
+      font-size: .6rem;
+    }
+    
+   
+    .tw-followCard-avatar {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+    
+    .tw-followCard-button {   
+      font-size: 1rem; 
+      margin: 0 0.25rem;   
+    }
+  
+  }
+
+  /*************** Pantallas tablet, 600px *******************/
+@media (max-width: 950px) {
+  .totalCard {
+    width: 50vw;
+    height: 20vh;
+    border: 1px solid #BFBFBF;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    /* margin: 1rem 1rem; */
+}
+
+.tw-followCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: .8rem;
+    width: 50vw;
+    height: 20vh;
+  }
+  
+
+  .tw-followCard div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: .5rem;
+    margin-left: .5rem;
+  }
+  
+  .tw-followCard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    margin: 0 1rem;
+    z-index: 0;
+  }
+
+  .tw-followCard-header > div > strong {
+    font-size: .9rem;
+  }
+
+  .tw-followCard-header span {
+    margin-top: .5rem;
+    font-size: .8rem;
+  }
+  
+ /*  .tw-followCard-info {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  
+  .tw-followCard-avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+
+  .tw-followCard aside {
+    position: relative;
+    left: 6.5vw;
+    /* width: 100%; */
+    height: 5vh;
+    margin-bottom: .5rem;
+  }
+  
+  .tw-followCard-button {
+    background-color: #E53F15;
+    width: 35vw;
+    height: 5vh;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder; 
+    /* margin-bottom: 3rem; */   
+  }
+  
+  .tw-followCard-button:hover {
+    opacity: .8;
+  }
+  
+  .tw-followCard-text {
+    display: block;
+  }
+}
+
+  /*************** Pantallas tablet, 600px *******************/
+  @media (max-width: 600px) {
+    .totalCard {
+      width: 80vw;
+      height: 30vh;
+      border: 1px solid #BFBFBF;
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;   
+      /* margin: 1rem 1rem; */
+  }
+  
+  .tw-followCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      color: #000;
+      font-size: .8rem;
+      width: 80vw;
+      height: 30vh;
+    }
+    
+  
+    .tw-followCard div {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      margin-top: .5rem;
+      margin-left: .5rem;
+    }
+    
+    .tw-followCard-header {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: top;
+      margin: 0 1rem;
+      z-index: 0;
+    }
+  
+    .tw-followCard-header > div > strong {
+      font-size: .9rem;
+    }
+  
+    .tw-followCard-header span {
+      margin-top: .5rem;
+      font-size: .8rem;
+    }
+    
+   /*  .tw-followCard-info {
+      display: flex;
+      flex-direction: column;
+    } */
+    
+    
+    .tw-followCard-avatar {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+  
+    .tw-followCard aside {
+      position: relative;
+      left: 12vw;
+      /* width: 100%; */
+      height: 5vh;
+      margin-bottom: .5rem;
+    }
+    
+    .tw-followCard-button {
+      background-color: #E53F15;
+      width: 50vw;
+      height: 5vh;
+      border: none;
+      border-radius: 0.5rem;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bolder; 
+      /* margin-bottom: 3rem; */   
+    }
+    
+    .tw-followCard-button:hover {
+      opacity: .8;
+    }
+    
+    .tw-followCard-text {
+      display: block;
+    }
+  }
+
+    /*************** Pantallas tablet, 600px *******************/
+    @media (max-width: 320px) {
+      .totalCard {
+        width: 80vw;
+        height: 40vh;
+        border: 1px solid #BFBFBF;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        /* margin: 1rem 1rem; */
+    }
+    
+    .tw-followCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: #000;
+        font-size: .8rem;
+        width: 80vw;
+        height: 40vh;
+      }
+
+      .tw-followCard div {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: .2rem;
+        margin-left: .5rem;
+      }
+    }

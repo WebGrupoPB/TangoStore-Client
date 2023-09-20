@@ -1,0 +1,414 @@
+header { 
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .hero-spaceEmpleos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65vh;
+  }
+  
+  
+  .hero-sliderEmpleos{
+    width: 95%;
+    height: 60vh;
+    /* position: relative;
+    left: 2.5vw;
+    top: 1rem; */
+  }
+  
+
+  .hero-sliderEmpleos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 60vh;
+    position: relative;
+    top: 10vh;
+  }
+
+  .plazasDisponibles {
+    /* background-color: red; */
+    width: 100%;
+    min-height: 75vh;
+
+    position: relative;
+    top: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .plazasDisponibles h2 {
+    position: relative;
+    left: 7vw;
+    top: 2.5vh;
+
+    font-size: 2rem;
+    font-weight: bolder;
+
+  }
+
+  .containerPlazas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fondo {
+    height: 100vh;
+    width: auto;
+  }
+
+  .contenidoPerfiles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+.perfilesPlazas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+  .footerEmpleo {
+    position: relative;
+    top: 60vh;
+  }
+
+
+  /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
+@media (min-width: 1441px) {
+
+  .plazasDisponibles {
+    /* background-color: red; */
+    width: 100%;
+    min-height: 75vh;
+
+    position: relative;
+    top: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .plazasDisponibles h2 {
+    position: relative;
+    left: 7vw;
+    top: 2.5vh;
+
+    font-size: 4rem;
+    font-weight: bolder;
+
+  }
+
+  .containerPlazas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fondo {
+    height: 100vh;
+    width: auto;
+  }
+
+  .contenidoPerfiles{
+    gap: 2rem;
+  }
+
+  .perfilesPlazas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .footerEmpleo {
+    position: relative;
+    top: 60vh;
+  }
+}
+
+/*************** Pantallas tablet, 600px *******************/
+@media (max-width: 950px) {
+  header { 
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .hero-spaceEmpleos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+  }
+  
+  
+  .hero-sliderEmpleos{
+    width: 95%;
+    height: 30vh;
+    /* position: relative;
+    left: 2.5vw;
+    top: 1rem; */
+  }
+  
+
+  .hero-sliderEmpleos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40vh;
+    position: relative;
+    top: 10vh;
+  }
+
+  .plazasDisponibles {
+    /* background-color: red; */
+    width: 100%;
+    min-height: 75vh;
+
+    position: relative;
+    top: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .plazasDisponibles h2 {
+    position: relative;
+    left: 7vw;
+    top: 2.5vh;
+
+    font-size: 2rem;
+    font-weight: bolder;
+
+  }
+
+  .containerPlazas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fondo {
+    height: 80vh;
+    width: auto;
+  }
+
+  .contenidoPerfiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5vh;
+  }
+
+  .perfilesPlazas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .footerEmpleo {
+    position: relative;
+    top: 30vh;
+  }
+}
+
+/*************** Pantallas moviles, 600px *******************/
+@media (max-width: 600px) {
+.hero-sliderEmpleos2 {
+  width: 95%;
+}
+
+.hero-spaceEmpleos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65vh;
+}
+
+
+.hero-sliderEmpleos{
+  width: 95%;
+  height: 60vh;
+  /* position: relative;
+  left: 2.5vw;
+  top: 1rem; */
+}
+
+
+.hero-sliderEmpleos2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 70vh;
+  position: relative;
+  top: 10vh;
+}
+
+.plazasDisponibles {
+  /* background-color: red; */
+  width: 100%;
+  min-height: 75vh;
+
+  position: relative;
+  top: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.plazasDisponibles h2 {
+  position: relative;
+  left: 7vw;
+  top: 2.5vh;
+
+  font-size: 2rem;
+  font-weight: bolder;
+
+}
+
+.containerPlazas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fondo {
+  display: none;
+}
+
+.perfilesPlazas {
+display: flex;
+flex-direction: column;
+gap: 1.25rem;
+}
+
+.footerEmpleo {
+  position: relative;
+  top: 60vh;
+}
+
+
+}
+
+/*************** Pantallas tablet, por ALTURA 768px *******************/
+@media (min-height: 1350px) {
+  header { 
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .hero-spaceEmpleos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+  }
+  
+  
+  .hero-sliderEmpleos{
+    width: 95%;
+    height: 25vh;
+    /* position: relative;
+    left: 2.5vw;
+    top: 1rem; */
+  }
+  
+
+  .hero-sliderEmpleos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30vh;
+    position: relative;
+    top: 5vh;
+  }
+
+  .plazasDisponibles {
+    /* background-color: red; */
+    width: 100%;
+    height: 75vh;
+
+    position: relative;
+    top: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .plazasDisponibles h2 {
+    position: relative;
+    left: 7vw;
+    top: 2.5vh;
+
+    font-size: 2rem;
+    font-weight: bolder;
+
+  }
+
+  .containerPlazas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fondo {
+    display: none;
+  }
+
+  .contenidoPerfiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .perfilesPlazas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .footerEmpleo {
+    position: relative;
+    top: 20vh;
+  }
+}

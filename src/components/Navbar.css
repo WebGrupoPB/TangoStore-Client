@@ -1,0 +1,369 @@
+
+/****************************************************************
+
+                    Estilos del Navbar 
+
+******************************************************************/
+.navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+.navbar-logo img{
+    width: 12vw;
+    height: auto;
+    position: relative;
+    right: 1.75vw;
+  }
+
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .navbar-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .navbar-links a.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(252, 193, 44);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    color: #fff;
+    background-clip: text; 
+    background-image: linear-gradient(
+      to bottom,
+      rgba(252, 193, 44, 1) 100%,
+      rgba(252, 193, 44, 1) 100%
+    ); 
+    
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; 
+  }
+  
+
+  .navbar-links a:last-child {
+    margin-right: 0;
+  }
+
+  .storeButton {
+    position: relative;
+    /* bottom: 0.5rem; */
+    padding: 2lvh;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .storeButton:hover {
+    background-color: rgba(252,  193, 44, 0.75); /* Amarillo con opacidad */
+  }
+
+  .storeButton img {
+    width: 2vw;
+    height: auto;
+  }
+
+
+/*************** Pantallas Desktop/Tv o mayores 1440px *******************/
+@media (min-width: 1441px) {
+  .navbar-links a {
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+
+  .navbar-links a.active {
+    
+    text-decoration-thickness: 6px;
+    text-underline-offset: 16px;
+    
+  }
+
+  .storeButton {
+    padding: 2.5lvh 2lvw;
+  }
+
+  .storeButton img {
+    width: 2vw;
+    height: auto;
+  }
+
+}
+
+/*************** Pantallas laptop o tablet, menores 1024px *******************/
+@media (max-width: 1024px) {
+  /* .navbar-logo img{
+    width: 15vw;
+    height: 10vh;
+  } */
+}
+
+
+/*************** Pantallas tablet o moviles, 768px *******************/
+@media (max-width: 950px) {
+  .navbar-logo img{
+    width: 25vw;
+    height: auto;
+  }
+
+  .menuDesktop {
+    display: none;
+  }
+
+  .menuMovil {
+    background-color: rgba(0, 0, 0, 0.8); 
+    width: 75%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 12.5vh;
+    
+  }
+
+  .menuMovil .navbar-links {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5rem;
+  }
+
+  
+  .navbar-links a {
+    font-size: 2rem;
+  }
+
+  .navbar-links a.active {
+    text-decoration-thickness: 6px;
+    text-underline-offset: 16px;
+    
+  }
+
+  .storeButton img {
+    width: 5vw;
+    height: auto;
+  }
+
+}
+
+
+
+/*************** Pantallas moviles talla L/M/S, 425px *******************/
+@media (max-width: 600px) {
+  .navbar-logo img{
+    width: 40vw;
+    height: auto;
+  }
+
+
+  .menuMovil .navbar-links {    
+    gap: 3rem;
+  }
+
+  .menuMovil .navbar-links a{    
+    font-size: 1rem;
+  }
+
+  .navbar-links a.active {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    
+  }
+}
+
+
+/*************** Pantallas moviles talla S, 320px *******************/
+@media (max-width: 360px) {
+  .menuMovil .navbar-links a{    
+    font-size: 0.85rem;
+  }
+}
+
+/*************** Pantallas tABLET L, altura 1350px *******************/
+@media (min-height: 1350px) {
+  .navbar-logo img{
+    width: 20vw;
+    height: auto;
+    position: relative;
+    right: 1.75vw;
+  }
+
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .navbar-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .navbar-links a.active {
+    text-decoration-thickness: 5px;
+    text-underline-offset: 12px;
+  }
+
+  .storeButton {
+    padding: 1.5lvh;
+    border: 3px solid #fff;
+  }
+
+
+  .storeButton img {
+    width: 3vw;
+    height: auto;
+  }
+}
+
+/*********************
+
+  hamburguesa menu
+
+*************************/
+
+.showMenu{
+  display: none;
+}
+
+
+/*************** Pantallas tablet 950px *******************/
+@media (max-width: 950px) {
+  .showMenu{
+    display: block;
+
+  }
+
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 4rem;
+    border: 0;
+    background: transparent;
+    gap: 1.2rem;
+  }
+  
+   
+  
+  .hamburger-button > div {
+    background: #fff;
+    height: 6px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+  }
+  
+  
+  .hamburger-button > div:first-child {
+    width: 50%;   
+  }
+  
+  .hamburger-button > div:last-child {
+    width: 50%;   
+    position: relative;
+    left: 2.5rem;
+  }
+  
+  .hamburger-button:hover div:first-child {
+    transform: rotate(45deg);
+    width: 85%;
+  }
+  
+  .hamburger-button:hover div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-button:hover div:last-child {
+    transform: rotate(-45deg);
+    width: 85%;
+    position: relative;
+    left: 0;
+    
+  }
+  
+}
+
+/*************** Pantallas tablet o moviles, 768px *******************/
+@media (max-width: 600px) {
+  .showMenu{
+    display: block;
+
+  }
+
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 2rem;
+    border: 0;
+    background: transparent;
+    gap: .6rem;
+  }
+  
+   
+  
+  .hamburger-button > div {
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+  }
+  
+  
+  .hamburger-button > div:first-child {
+    width: 50%;   
+  }
+  
+  .hamburger-button > div:last-child {
+    width: 50%;   
+    position: relative;
+    left: 1rem;
+  }
+  
+  .hamburger-button:hover div:first-child {
+    transform: rotate(45deg);
+    width: 100%;
+  }
+  
+  .hamburger-button:hover div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-button:hover div:last-child {
+    transform: rotate(-45deg);
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  
+}
+
+
+
+
+
+
+

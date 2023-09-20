@@ -1,0 +1,1197 @@
+
+
+header { 
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+
+.hero-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-slider{
+  width: 95%;
+  height: 75vh;
+}
+
+.ver-menu{
+  position: relative;
+  top: 20vh;
+  background-color: #E53F15;
+  width: 100%;
+  height: 60vh;
+}
+
+
+.tango-fondo {
+  /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
+  background-size: cover; */
+  width: 60%;
+  height: 60vh;
+  position: absolute;
+  right: 0;
+}
+
+.tango-fondo img {
+  position: absolute;
+  right: 0;
+  width: 60vw;
+  height: auto;
+}
+
+.text-tandog {
+  position: absolute;
+  left: 4.5rem;
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: top;
+}
+
+.text-tandog h2 {
+  font-size:  4rem; 
+  font-weight: bolder;
+  color: #fff;
+}
+
+.text-tandog a {
+  text-decoration: none;
+}
+
+
+.text-tandog span {
+  background-color: rgb(252,  193, 44);
+  width: 10rem;
+  height: 4rem;
+  padding: 15px 20px;
+  margin: 10px 0;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.food-section {
+  background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  top: 50vh;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.ubicacion-section {
+  position: relative;
+  top: 75vh;
+  width: 100%;
+  height: 60vh;
+  border-top: 0.75rem solid rgb(252,  193, 44);
+  border-bottom: 0.75rem solid rgb(252,  193, 44);
+}
+
+.ubi-info {
+  position: absolute;
+  left: 2.8rem;
+  width: 75%;
+  height: 60vh;
+}
+
+.ubi-info h1 {
+  font-size: 4rem;
+}
+
+.ubi-info div {
+  position: relative;
+  bottom: 1.5rem;
+  width: 60%;
+  height: 30%;
+  font-size: 1.3rem;
+}
+
+.ubi-info a {
+  width: 10.5rem;
+  height: 3rem;
+  text-decoration: none;
+}
+
+.ubi-info span {
+  position: relative;
+  /* top: 1rem; */
+  background-color: #fff;
+  color: #000;
+  width: 10.5rem;
+  height: 3rem;
+  border: 2px solid #E53F15;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.ubi-info span img {
+  width: 2rem;
+  height: auto;
+  margin: 0 8px;
+}
+
+.ubi-image{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ubi-image img{
+  position: relative;
+  width: 80vh;
+  height: auto;
+}
+
+.servicios-section {
+  position: relative;
+  top: 100vh;
+  background-color: #E53F15;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+.servicios-section h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.servicios-section img {
+  margin: 2vw;
+  width: 13vw;
+  height: auto;
+}
+
+.footerHome {
+  position: relative;
+  top: 100vh;
+}
+
+/*************** Pantallas Laptop talla L 1440px *******************/
+@media (max-width: 1440px) {
+
+}
+
+
+/*************** Pantallas Desktop/Tv o mayores 1440px *******************/
+@media (min-width: 1441px) {
+  
+  .text-tandog {
+    position: absolute;
+    left: 9rem;
+  }
+  
+  .text-tandog h2 {
+    font-size:  7rem; 
+  }
+ 
+  .text-tandog span {
+    background-color: rgb(252,  193, 44);
+    width: 25rem;
+    height: 8rem;
+    padding: 20px 30px;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 16px;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .food-section {
+    background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 50vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .ubicacion-section {
+    border-top: 1.5rem solid rgb(252,  193, 44);
+    border-bottom: 1.5rem solid rgb(252,  193, 44);
+  }
+  
+  .ubi-info {
+    position: absolute;
+    left: 5rem;
+    width: 75%;
+    height: 60vh;
+  }
+  
+  .ubi-info h1 {
+    font-size: 8rem;
+  }
+  
+  .ubi-info div {
+    position: relative;
+    bottom: 2rem;
+    width: 60%;
+    height: 30%;
+    font-size: 2.5rem;
+  }
+  
+  .ubi-info a {
+    text-decoration: none;
+  }
+  
+  .ubi-info span {
+    position: relative;
+    bottom: 1rem;
+    background-color: #fff;
+    color: #000;
+    width: 21rem;
+    height: 6rem;
+    border: 4px solid #E53F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .ubi-info span img {
+    width: 4rem;
+    height: auto;
+    margin: 0 16px;
+  }
+  
+  .ubi-image{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ubi-image img{
+    position: relative;
+    width: 80vh;
+    height: auto;
+  }
+  
+  .servicios-section {
+    position: relative;
+    top: 100vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+  }
+  
+  .servicios-section h1 {
+    color: #fff;
+    font-size: 8rem;
+  }
+  
+  
+  .footerHome {
+    position: relative;
+    top: 100vh;
+  }
+}
+
+
+/*************** Pantallas Laptop,  1024px *******************/
+@media (max-width: 1024px) {
+   
+  .text-tandog {
+    position: absolute;
+    left: 4rem;
+  }
+  
+  .text-tandog h2 {
+    font-size:  3rem; 
+  }
+ 
+  .text-tandog span {
+    background-color: rgb(252,  193, 44);
+    width: 12.5rem;
+    height: 4rem;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    
+  }
+
+    
+  .food-section {
+    background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 50vh;
+    width: 100%;
+    height: 100vh;
+  }
+
+
+  .ubicacion-section {
+    position: relative;
+    top: 75vh;
+    width: 100%;
+    height: 60vh;
+    border-top: 0.75rem solid rgb(252,  193, 44);
+    border-bottom: 0.75rem solid rgb(252,  193, 44);
+  }
+
+  .ubi-info {
+    position: absolute;
+    left: 2.8rem;
+    width: 75%;
+    height: 60vh;
+  }
+
+  .ubi-info h1 {
+    font-size: 3rem;
+  }
+
+  .ubi-info div {
+    position: relative;
+    bottom: 1.5rem;
+    width: 60%;
+    height: 30%;
+    font-size: 1.1rem;
+  }
+
+  .ubi-info a {
+    width: 10.5rem;
+    height: 3rem;
+    text-decoration: none;
+  }
+
+  .ubi-info span {
+    position: relative;
+    /* top: 1rem; */
+    background-color: #fff;
+    color: #000;
+    width: 10.5rem;
+    height: 3rem;
+    border: 2px solid #E53F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .ubi-info span img {
+    width: 2rem;
+    height: auto;
+    margin: 0 8px;
+  }
+
+  .ubi-image{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ubi-image img{
+    position: relative;
+    width: 80vh;
+    height: auto;
+  }
+
+  .servicios-section {
+    position: relative;
+    top: 100vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding-bottom: 10vh;
+  }
+
+  .servicios-section h1 {
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  /* .servicios-section img {
+    margin: 1rem;
+    width: 12.5rem;
+    height: 12.5rem;
+  } */
+
+  .footerHome {
+    position: relative;
+    top: 100vh;
+  }
+}
+
+/*************** Pantallas tablet, 768px *******************/
+@media (max-width: 950px) {
+  .hero-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+  }
+  
+  .hero-slider{
+    width: 95%;
+    height: 40vh;
+  }
+
+  .ver-menu{
+    position: relative;
+    top: 10vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .text-tandog {
+    position: absolute;
+    left: 2.5rem;
+  }
+
+  .text-tandog {
+    position: absolute;
+    left: 4rem;
+  }
+  
+  .text-tandog h2 {
+    font-size:  2.5rem; 
+  }
+ 
+  .text-tandog span {
+    background-color: rgb(252,  193, 44);
+    width: 12.5rem;
+    height: 4rem;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    
+  }
+
+  .tango-fondo {
+    /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
+    background-size: cover; */
+    width: 80%;
+    height: 60vh;
+    position: absolute;
+    right: 0;
+    
+  }
+
+  .tango-fondo img {
+    width: 150%;
+    height: auto;
+  }
+
+  .food-section {
+    background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 35vh;
+    width: 100%;
+    height: 40vh;
+  }
+
+
+  .ubicacion-section {
+    position: relative;
+    top: 55vh;
+    width: 100%;
+    height: 30vh;
+    border-top: 0.75rem solid rgb(252,  193, 44);
+    border-bottom: 0.75rem solid rgb(252,  193, 44);
+  }
+
+  .ubi-info {
+    position: absolute;
+    left: 2.4rem;
+    width: 75%;
+    height: 30vh;
+  }
+
+  .ubi-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .ubi-info div {
+    position: relative;
+    bottom: 1.5rem;
+    width: 60%;
+    height: 30%;
+    font-size: 1.1rem;
+  }
+
+  .ubi-info a {
+    width: 10.5rem;
+    height: 3rem;
+    text-decoration: none;
+  }
+
+  .ubi-info span {
+    background-color: #fff;
+    color: #000;
+    width: 10.5rem;
+    height: 3rem;
+    border: 2px solid #E53F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .ubi-info span img {
+    width: 2rem;
+    height: auto;
+    margin: 0 8px;
+  }
+
+  .ubi-image{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ubi-image img{
+    position: relative;
+    width: 80vh;
+    height: auto;
+  }
+
+  .servicios-section {
+    position: relative;
+    top: 70vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+  }
+
+  .servicios-section h1 {
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  .servicios-section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .servicios-section img {
+    margin: 2vw;
+    width: 30vw;
+    height: auto;
+  }
+
+  .footerHome {
+    position: relative;
+    top: 70vh;
+  }
+
+
+}
+
+
+
+
+/*************** Pantallas moviles L/M/S, 425px *******************/
+@media (max-width: 600px) {
+  .hero-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .hero-slider{
+    width: 95%;
+    height: 55vh;
+  }
+
+  .ver-menu{
+    position: relative;
+    top: 20vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .tango-fondo {
+    /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
+    background-size: cover; */
+    width: 80%;
+    height: 40vh;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .tango-fondo img {
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 150%;
+    height: auto;
+    transform: rotate(12deg);
+  }
+
+ 
+  .text-tandog {
+    position: absolute;
+    left: 2rem;
+    width: 60%;
+  }
+
+ 
+  .text-tandog h2 {
+    font-size:  2rem; 
+  }
+ 
+  .text-tandog span {
+    background-color: rgb(252,  193, 44);
+    width: 12.5rem;
+    height: 4rem;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    font-size: 1rem;
+    
+  }
+
+  .food-section {
+    background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 50vh;
+    width: 100%;
+    height: 30vh;
+  }
+
+
+  .ubicacion-section {
+    position: relative;
+    top: 75vh;
+    width: 100%;
+    height: 50vh;
+    border-top: 0.75rem solid rgb(252,  193, 44);
+    border-bottom: 0.75rem solid rgb(252,  193, 44);
+  }
+
+  .ubi-info {
+    position: absolute;
+    left: 1.5rem;
+    width: 75%;
+    height: 50vh;
+  }
+
+  .ubi-info h1 {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+
+  .ubi-info div {
+    position: relative;
+    bottom: 1rem;
+    width: 60%;
+    height: 30%;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+  }
+
+  .ubi-info a {
+    width: 10.5rem;
+    height: 3rem;
+    text-decoration: none;
+  }
+
+  .ubi-info span {
+    background-color: #fff;
+    color: #000;
+    width: 7.5rem;
+    height: 2.5rem;
+    border: 2px solid #E53F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-right: 8px;
+  }
+
+  .ubi-info span img {
+    width: 2rem;
+    height: auto;
+    margin: 0 8px;
+  }
+
+  .ubi-image{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .ubi-image img{
+    position: relative;
+    width: 100vh;
+    height: auto;
+  }
+
+  .servicios-section {
+    position: relative;
+    top: 90vh;
+    background-color: #E53F15;
+    width: 100%;
+    min-height: 30vh;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicios-section h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .servicios-section img {
+    margin: 2vw;
+    width: 30vw;
+    height: auto;
+  }
+
+  .footerHome {
+    position: relative;
+    top: 90vh;
+  }
+}
+
+
+/*************** Pantallas moviles L/M/S, 425px *******************/
+@media (max-width: 320px) {
+  .hero-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .hero-slider{
+    width: 95%;
+    height: 55vh;
+  }
+
+  .ver-menu{
+    position: relative;
+    top: 20vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .tango-fondo {
+    /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
+    background-size: cover; */
+    width: 80%;
+    height: 40vh;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .tango-fondo img {
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 150%;
+    height: auto;
+    transform: rotate(12deg);
+  }
+
+ 
+  .text-tandog {
+    position: absolute;
+    left: 2rem;
+    width: 60%;
+  }
+
+ 
+  .text-tandog h2 {
+    font-size:  1.5rem; 
+  }
+ 
+  .text-tandog span {
+    background-color: rgb(252,  193, 44);
+    width: 12.5rem;
+    height: 4rem;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    font-size: 0.5rem;
+    
+  }
+
+  .food-section {
+    background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 50vh;
+    width: 100%;
+    height: 40vh;
+  }
+
+
+  .ubicacion-section {
+    position: relative;
+    top: 75vh;
+    width: 100%;
+    min-height: 50vh;
+    border-top: 0.75rem solid rgb(252,  193, 44);
+    border-bottom: 0.75rem solid rgb(252,  193, 44);
+  }
+
+  .ubi-info {
+    position: absolute;
+    left: 1.5rem;
+    width: 75%;
+    min-height: 40vh;
+  }
+
+  .ubi-info h1 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .ubi-info div {
+    position: relative;
+    bottom: 1rem;
+    width: 60%;
+    height: 30%;
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .ubi-info a {
+    width: 10.5rem;
+    height: 3rem;
+    text-decoration: none;
+  }
+
+  .ubi-info span {
+    background-color: #fff;
+    color: #000;
+    width: 30vw;
+    height: 2.5rem;
+    border: 2px solid #E53F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .ubi-info span img {
+    width: 1rem;
+    height: auto;
+    margin: 0 8px;
+  }
+
+  .ubi-image{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    min-height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .ubi-image img{
+    position: relative;
+    width: 100vh;
+    height: auto;
+  }
+
+  .servicios-section {
+    position: relative;
+    top: 90vh;
+    background-color: #E53F15;
+    width: 100%;
+    min-height: 20vh;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicios-section h1 {
+    padding-top: 5vh;
+    color: #fff;
+    font-size: 1.5rem;
+    
+  }
+
+
+  .footerHome {
+    position: relative;
+    top: 90vh;
+  }
+}
+
+
+/*************** Pantallas tablet, por ALTURA 768px *******************/
+@media (min-height: 1350px) {
+  .hero-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+  }
+  
+  .hero-slider{
+    width: 95%;
+    height: 30vh;
+  }
+
+  .ver-menu{
+    position: relative;
+    top: 10vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .text-tandog {
+    position: absolute;
+    left: 2.5rem;
+  }
+
+  .text-tandog h2 {
+    font-size:  3.5rem; 
+  }
+ 
+  .text-tandog span {
+    background-color: rgb(252,  193, 44);
+    width: 12.5rem;
+    height: 4rem;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    font-size: 2rem;
+    
+  }
+
+  .tango-fondo {
+    /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
+    background-size: cover; */
+    width: 80%;
+    height: 60vh;
+    position: absolute;
+    right: 0;
+    
+  }
+
+  .tango-fondo img {
+    width: 150%;
+    height: auto;
+  }
+
+  .food-section {
+    background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 30vh;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .ubicacion-section {
+    position: relative;
+    top: 45vh;
+    width: 100%;
+    height: 35vh;
+    border-top: 0.75rem solid rgb(252,  193, 44);
+    border-bottom: 0.75rem solid rgb(252,  193, 44);
+  }
+
+  .ubi-info {
+    position: absolute;
+    left: 2.4rem;
+    width: 75%;
+    height: 35vh;
+  }
+
+  .ubi-info h1 {
+    font-size: 3rem;
+  }
+
+  .ubi-info div {
+    position: relative;
+    bottom: 1.5rem;
+    width: 60%;
+    height: 30%;
+    font-size: 2rem;
+  }
+
+  .ubi-info a {
+    width: 10.5rem;
+    height: 3rem;
+    text-decoration: none;
+  }
+
+  .ubi-info span {
+    position: relative;
+    /* top: 1rem; */
+    background-color: #fff;
+    color: #000;
+    width: 15rem;
+    height: 4rem;
+    border: 2px solid #E53F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .ubi-info span img {
+    width: 2rem;
+    height: auto;
+    margin: 0 8px;
+  }
+
+  .ubi-image{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ubi-image img{
+    position: relative;
+    width: 80vh;
+    height: auto;
+  }
+
+  .servicios-section {
+    position: relative;
+    top: 60vh;
+    background-color: #E53F15;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+  }
+
+  .servicios-section h1 {
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  .servicios-section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .servicios-section img {
+    margin: 2vw;
+    width: 30vw;
+    height: auto;
+  }
+
+  .footerHome {
+    position: relative;
+    top: 60vh;
+  }
+
+}
