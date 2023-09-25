@@ -18,7 +18,7 @@ import trianguloPng from '../assets/icons/tango-triangulo.png'
 const dataHero1 = [
   {
     id: 0,
-    img: 'https://i.ibb.co/WgM6s2V/IMG-9848.jpg',
+    img: 'https://i.ibb.co/4VKLHbd/5.png',
   },
 ];
 
@@ -33,39 +33,20 @@ const dataHero2 = [
 
 const dataCards1 = [
   {
-      img: 'https://i.ibb.co/8gZNC4L/Funciones-de-un-encargado-de-tienda-1140x642.jpg',
-      puesto: 'Gerente de Tienda',
-      description: 'Responsable de la operación general de la tienda, la gestión del personal, la planificación de inventario y la toma de decisiones estratégicas.',
-  },
-  {
-      img: 'https://i.ibb.co/dpby99w/31496529-gerente-de-la-tienda-feliz-celebraci-n-de-sus-pulgares-para-arriba-en-un-supermercado.jpg',
-      puesto: 'Encargado de departamento',
-      description: 'Responsable de un departamento específico, como comestibles, productos frescos, productos congelados, etc.',
-  },
-  {
-    img: 'https://i.ibb.co/3kHfTgm/limpieza-tienda.jpg',
-    puesto: 'Empleado de limpieza',
-    description: 'Mantiene la tienda limpia y ordenada, realiza labores de limpieza y saneamiento.',
+      img: 'https://i.ibb.co/WGPQmKS/empleo-Perfil.png',
+      puesto: 'DEPENDIENTE DE TIENDA ',
+      description: 'Encargados de caja, preparación de alimentos, rotación de productos en cámaras frías y góndolas, limpieza de tienda.',
+      urlJob: 'https://docs.google.com/forms/d/e/1FAIpQLSfI_2Hhj53XtbI9LwLUMTH1zHOqk9x2_kt9_RgNEFFr8QhTQg/viewform',
   },
 ];
 
 const dataCards2 = [
   {
-      img: 'https://i.ibb.co/8gZNC4L/Funciones-de-un-encargado-de-tienda-1140x642.jpg',
-      puesto: 'Subgerente de Tienda',
-      description: 'Ayuda al gerente en la supervisión diaria y puede encargarse de la tienda en ausencia del gerente.',
+      img: 'https://i.ibb.co/6mBDB02/empleo-Logo.png',
+      puesto: 'PRÓXIMAMENTE',
+      description: 'En un futuro se habilitaran nuevas plazas',
+      urlJob: 'https://i.ibb.co/KL0DS1f/Logo-Tango-2.png',
   },
-  {
-      img: 'https://i.ibb.co/WpxDv7N/Getty-Images-478971338-1.jpg',
-      puesto: 'Cajero',
-      description: 'Procesa las transacciones de compra de los clientes y brinda un servicio amable y eficiente.',
-  },
-  {
-    img: 'https://i.ibb.co/8Mmq1zX/1660317335289.jpg',
-    puesto: 'Almacenamiento',
-    description: 'Gestiona el almacenamiento y la organización de productos en el almacén.',
-},
-
 ];
 
 
@@ -110,13 +91,14 @@ const Empleos = () => {
               <div className='perfilesPlazas'>
                 {
                     dataCards1.map(data => {
-                        const { img, puesto, description} = data
+                        const { img, puesto, description, urlJob} = data
 
                         return (
                           <ProfileCards
                             key={puesto}
                             img={img}
                             puesto={puesto}
+                            urlJob={urlJob}
                           >
                             {description}
                           </ProfileCards>

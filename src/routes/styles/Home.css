@@ -91,6 +91,7 @@ header {
   top: 50vh;
   width: 100%;
   height: 100vh;
+  padding: 12vh 0;
 }
 
 
@@ -177,6 +178,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: top;
+  padding: 5vh 0;
 }
 
 .servicios-section h1 {
@@ -675,7 +677,7 @@ header {
 
   .ver-menu{
     position: relative;
-    top: 20vh;
+    top: 10vh;
     background-color: #E53F15;
     width: 100%;
     height: 40vh;
@@ -729,7 +731,7 @@ header {
     background-size: cover;
     background-position: top;
     position: relative;
-    top: 50vh;
+    top: 25vh;
     width: 100%;
     height: 30vh;
   }
@@ -737,7 +739,7 @@ header {
 
   .ubicacion-section {
     position: relative;
-    top: 75vh;
+    top: 30vh;
     width: 100%;
     height: 50vh;
     border-top: 0.75rem solid rgb(252,  193, 44);
@@ -811,7 +813,7 @@ header {
 
   .servicios-section {
     position: relative;
-    top: 90vh;
+    top: 45vh;
     background-color: #E53F15;
     width: 100%;
     min-height: 30vh;
@@ -835,7 +837,7 @@ header {
 
   .footerHome {
     position: relative;
-    top: 90vh;
+    top: 45vh;
   }
 }
 
@@ -1019,7 +1021,7 @@ header {
 
 
 /*************** Pantallas tablet, por ALTURA 768px *******************/
-@media (min-height: 1350px) {
+/* @media (min-height: 1350px) {
   .hero-space {
     display: flex;
     align-items: center;
@@ -1063,8 +1065,6 @@ header {
   }
 
   .tango-fondo {
-    /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
-    background-size: cover; */
     width: 80%;
     height: 60vh;
     position: absolute;
@@ -1123,7 +1123,6 @@ header {
 
   .ubi-info span {
     position: relative;
-    /* top: 1rem; */
     background-color: #fff;
     color: #000;
     width: 15rem;
@@ -1194,4 +1193,4 @@ header {
     top: 60vh;
   }
 
-}
+} */

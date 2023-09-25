@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import paidSvg from '../assets/icons/Paid.svg';
+
 import './ProfileCard.css';
 
 
 
-const ProfileCards = ( { children,  puesto, img} ) => {
+const ProfileCards = ( { children,  puesto, img, urlJob} ) => {
   return (
 
     <div className='totalCard'>
@@ -30,7 +30,7 @@ const ProfileCards = ( { children,  puesto, img} ) => {
 
             <aside>
                 <button className="tw-followCard-button">
-                    <span className="tw-followCard-text">APLICAR</span>
+                    <Link to={urlJob} target='__blank'><span className="tw-followCard-text">APLICAR</span></Link>
                 </button>
             </aside>
 

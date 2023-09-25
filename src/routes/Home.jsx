@@ -7,6 +7,7 @@ import Decoradores from '../components/Decoradores';
 import './styles/Home.css';
 
 
+import mapMarker from "../assets/icons/Map Marker.png"
 
 
 const dataHero = [
@@ -31,13 +32,23 @@ const dataHero = [
 const dataPromotions = [
   {
     id: 0,
-    text: "DISFRUTA NUESTRA NUEVA DELICIOSA PIZZA VEGGIE",
-    img: 'https://i.ibb.co/f0mbRC5/2.png',
+    text: "¡Prueba nuestros nuevos Milk shake!",
+    img: 'https://i.ibb.co/b7xN9mZ/1.png',
   },
   {
     id: 1,
-    text: "SABOREA NUESTRO MILK SHAKE DE CHOCOLATE",
-    img: 'https://i.ibb.co/GCJ2YV3/1.png',
+    text: "Milk Shake de Fresa, Chocolate y Chicle",
+    img: 'https://i.ibb.co/cwDfD2Z/2.png',
+  },
+  {
+    id: 2,
+    text: "Disfruta de nuestras deliciosas pizzas Carnívora y Lomito",
+    img: 'https://i.ibb.co/k31zXjD/Promociones-2.png',
+  }, 
+  {
+    id: 3,
+    text: "Disfruta de nuestras deliciosas pizzas Veggie y Chipotle",
+    img: 'https://i.ibb.co/6BNPYBN/3.png',
   },
 ];
 
@@ -55,7 +66,7 @@ const Home = () => {
         <Decoradores />
 
 
-        <div className='hero-space'>
+        <div className='hero-space' id="hero-space">
           <section className='hero-slider'>
 
             <Slider dataSlider={dataHero} panelInfo='heroHome' />
@@ -77,7 +88,7 @@ const Home = () => {
 
         </section>
 
-        <section className='food-section'>
+        <section className='food-section' id='promociones'>
 
           <Slider dataSlider={dataPromotions} panelInfo='promotions' />
                   
@@ -90,13 +101,11 @@ const Home = () => {
             <div>
               <p><b>¡Emocionantes noticias!</b></p>
               <p>
-                Nos complace anunciar la apertura de
-                nuestra nueva tienda en una ubicación
-                conveniente y de fácil acceso.
+                Encuéntranos en las ubicaciones más convenientes y tan cerca de ti.
               </p>
 
               <a href="https://www.google.com/maps/search/Tango+Store/@14.6294877,-91.6623839,9z/data=!3m1!4b1?entry=ttu" target='_blank'>
-                <span><img src="./src/assets/icons/Map Marker.png" alt="google-map-icon" />Como LLegar</span>
+                <span><img src={mapMarker} alt="google-map-icon" />Como LLegar</span>
               </a>
             </div>
             
@@ -108,7 +117,7 @@ const Home = () => {
 
         </section>
 
-        <section className='servicios-section'>
+        <section className='servicios-section'  id='servicios'>
           <h1>Servicios Disponibles</h1>
 
           <div>

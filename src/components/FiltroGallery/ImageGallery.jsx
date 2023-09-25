@@ -20,27 +20,31 @@ export const ImageGallery = ({index, image}) => {
 
   return (
                 <div
-                            key={index}
-                            className={`gallery-item ${image.category}`}
-                            onMouseEnter={() => {
-                                handleImageHover()// Manejar hover para esta imagen
-                            }}
-                            onMouseLeave={() => {
-                                handleImageLeave() // Manejar leave para esta imagen
-                            }}
+                  key={index}
+                  className={`gallery-item ${image.category}`}
+                  onMouseEnter={() => {
+                      handleImageHover()// Manejar hover para esta imagen
+                  }}
+                  onMouseLeave={() => {
+                      handleImageLeave() // Manejar leave para esta imagen
+                  }}
                 >
                     
-                    <div className="gallery-item-inner">
-                        <img src={image.imageUrl} alt={image.category} />
-                        
-                        
-                        {isHovered && (
-                        <div className="image-overlay">
-                            <h3>{image.title}</h3>
-                            <p>{image.description}</p>
+                  <div className="gallery-item-inner">
+                      <img src={image.imageUrl} alt={image.category} />
+                      
+                      
+                      {isHovered && (
+                      <div className="image-overlay">
+
+                        <div className='text-container'>
+                          <h3>{image.title}</h3>
+                          <p>{image.description}</p>
                         </div>
-                        )}
-                    </div>
+                        
+                      </div>
+                      )}
+                  </div>
                         
                             
                         

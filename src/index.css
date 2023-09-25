@@ -82,6 +82,56 @@ header {
   height: 3rem;
 }
 
+
+.bubbleChat {
+  position: absolute;
+  bottom: 15%;
+  left: -225%;  
+  width: 12rem;
+  height: 4rem;
+  /* border: 1px solid red; */
+  display: flex;
+  
+
+}
+
+
+.squareBubble {
+  background-color: #fff;
+  width: 12rem;
+  height: 4rem;
+  /* border: 1px solid #000; */
+  border-radius: 8px;
+  line-height: 1px;
+  text-align: left;
+}
+
+.squareBubble > h4 {
+  margin-left: 12px;
+  font-size: 1rem;
+}
+
+.squareBubble > p {
+  margin-left: 12px;
+  font-size: .8rem;
+}
+
+.trianguleBubble {
+  
+  position: relative;
+  top: 55%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent; /* Lado izquierdo transparente */
+  border-bottom: 10px solid transparent; /* Lado derecho transparente */
+  border-left: 20px solid #fff; /* Lado inferior sólido (el color define el color del triángulo) */
+}
+
+
+
+
+
+
 /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
 @media (min-width: 1441px) {
   .text-square {
@@ -120,6 +170,47 @@ header {
   .circle-icon img {
     width: 5rem;
     height: 5rem;
+  }
+
+  .bubbleChat {
+    position: absolute;
+    bottom: 12%;
+    left: -280%;  
+    width: 24rem;
+    height: 8rem;
+    /* border: 1px solid red; */
+    display: flex;
+  }
+
+  .squareBubble {
+    background-color: #fff;
+    width: 24rem;
+    height: 8rem;
+    /* border: 1px solid #000; */
+    border-radius: 8px;
+    line-height: 1px;
+    text-align: left;
+  }
+
+  .squareBubble > h4 {
+    margin-left: 12px;
+    font-size: 2rem;
+  }
+  
+  .squareBubble > p {
+    margin-left: 12px;
+    font-size: 1.6rem;
+  }
+
+  .trianguleBubble {
+  
+    position: relative;
+    top: 55%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent; /* Lado izquierdo transparente */
+    border-bottom: 20px solid transparent; /* Lado derecho transparente */
+    border-left: 40px solid #fff; /* Lado inferior sólido (el color define el color del triángulo) */
   }
 }
 
@@ -162,6 +253,18 @@ header {
   .circle-icon img {
     width: 2.3rem;
     height: 2.3rem;
+  }
+
+  .bubbleChat {
+    position: absolute;
+    bottom: 15%;
+    left: -290%;  
+    width: 12rem;
+    height: 4rem;
+    /* border: 1px solid red; */
+    display: flex;
+    
+  
   }
 }
   

@@ -68,6 +68,7 @@
 
 ***********************************/
 
+
 .menuGallery { 
     background-color: #343A40;
     width: 100%;
@@ -87,9 +88,20 @@
 
 .categoryTitle {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
 }
+
+.categoryOptions {
+    font-size: 15px;
+	color: #fff;
+}
+
+/* .categoryOptions > table > td {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+} */
 
 img {
 	max-width: 100%;
@@ -143,6 +155,16 @@ img {
     text-align: center;
     opacity: 1;
     transition: opacity 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-container {
+    width: 95%;
+    height: 95%;
 
     display: flex;
     flex-direction: column;
@@ -269,6 +291,11 @@ img {
     font-size: 4rem;
     text-transform: capitalize;
 }
+
+.categoryOptions {
+    font-size: 2rem;
+	color: #fff;
+}
 }
 
 /*************** Pantallas Laptop,  1024px *******************/
@@ -344,7 +371,7 @@ img {
 }
 
 .filtroSpace span img {
-    width: 2vw;
+    width: 2.5vw;
     height: auto;
 }
 
@@ -358,6 +385,25 @@ img {
     justify-content: center;   
     width: 100%;
 }
+
+.filterBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+    height: 9vh;
+    
+    cursor: pointer;
+	margin: 4px 4px;
+}
+
+.filterBtn img {
+	width: 70%;
+	height: auto;
+	margin-top: 6px;
+}
+
 
 /* .gallery-filter .filter-item {
     font-size: 1rem;
@@ -378,7 +424,7 @@ img {
     background-color: #343A40;
     width: 100%;
     min-height: 100vh;
-    margin-top: 0vh;
+    margin-top: 5vh;
     padding-bottom: 10vh;
 }
 
@@ -397,7 +443,7 @@ img {
     .filtro-container{
         /* background-color: yellow; */
         width: 100%;
-        height: 50vh;
+        height: 100vh;
     
         display: flex;
         justify-content: center;
@@ -409,7 +455,7 @@ img {
         position: relative;
         bottom: 10vh;
         width: 95%;
-        height: 55vh;
+        height: 100vh;
     }
     
     .filtroSpace h1 {
@@ -427,7 +473,7 @@ img {
     }
     
     .filtroSpace span img {
-        width: 2vw;
+        width: 4vw;
         height: auto;
     }
     
@@ -440,6 +486,24 @@ img {
         align-items: center;
         justify-content: center;   
         width: 100%;
+    }
+
+    .filterBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 20vw;
+        height: 15vh;
+        
+        cursor: pointer;
+        margin: 4px 12px;
+    }
+    
+    .filterBtn img {
+        width: 100%;
+        height: auto;
+        margin-top: 6px;
     }
     
     /* .gallery-filter .filter-item {
@@ -461,7 +525,7 @@ img {
         background-color: #343A40;
         width: 100%;
         min-height: 100vh;
-        margin-top: 8vh;
+        margin-top: 75vh;
         padding-bottom: 10vh;
     }
     
@@ -543,7 +607,7 @@ img {
         background-color: #343A40;
         width: 100%;
         min-height: 100vh;
-        margin-top: 20vh;
+        margin-top: 120vh;
         padding-bottom: 10vh;
     }
     
@@ -551,25 +615,23 @@ img {
 
 
     /*************** Pantallas tablet, por ALTURA 768px *******************/
-@media (min-height: 1350px) {
+/* @media (min-height: 1350px) { */
         /***********************************
 
             Filtro
 
 ***********************************/
 
-.filtro-container{
-    /* background-color: yellow; */
+/* .filtro-container{
     width: 100%;
     height: 30vh;
 
     display: flex;
     justify-content: center;
-    /* align-items: top; */
+
 }
 
 .filtroSpace {
-    /* background-color: blue; */
     position: relative;
     bottom: 5vh;
     width: 95%;
@@ -606,14 +668,11 @@ img {
     width: 100%;
 }
 
-/* .gallery-filter .filter-item {
-    font-size: 1rem;
-} */
 
 .gallery-filter .filter-item.active{
 	color: #ff9800;
 	border-color : #ff9800;
-}
+} */
 
 /***********************************
 
@@ -621,7 +680,7 @@ img {
 
 ***********************************/
 
-.menuGallery { 
+/* .menuGallery { 
     background-color: #343A40;
     width: 100%;
     min-height: 100vh;
@@ -630,4 +689,4 @@ img {
 }
 
 
-}
+} */

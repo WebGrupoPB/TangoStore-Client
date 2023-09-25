@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './/Footer.css';
-export const API_SERVER = 'http://localhost:5000';
+export const API_SERVER = 'https://pp22zdc1y9.execute-api.us-east-1.amazonaws.com/prod';
 
 
 import instagramBtn from "../assets/icons/Instagram Circle.png"
@@ -68,30 +68,32 @@ const Footer = () => {
                     <h3>Redes Sociales</h3>
                     <div>
                         <a href="https://www.google.com/maps/search/Tango+Store/@14.6294877,-91.6623839,9z/data=!3m1!4b1?entry=ttu" target='_blank'>
-                            <img src={GoogleMapsBtn} alt="GoogleMaps" />
+                            <img src={GoogleMapsBtn} alt="GoogleMaps" className='socialMediaImgFooter' />
                         </a>
                         <a href="https://www.facebook.com/Tangostore.la?mibextid=LQQJ4d" target='_blank'>
-                            <img src={facebookBtn} alt="Facebook" />
+                            <img src={facebookBtn} alt="Facebook" className='socialMediaImgFooter' />
                         </a>
                         <a href="https://instagram.com/tangostore.la?igshid=MzRlODBiNWFlZA==" target='_blank'>
-                            <img src={instagramBtn} alt="Instagram" />
+                            <img src={instagramBtn} alt="Instagram" className='socialMediaImgFooter' />
                         </a>
                     </div>
                     <h3>Horarios</h3>
                     <div>
-                        <img src={squareclock} alt="reloj" />
+                        <img src={squareclock} alt="reloj" className='relojImgFooter' />
                         <p>Abierto las 24 horas</p>
                     </div>
                 </div>
 
                 <div className='footerLogo'>
-                    <img src="https://i.ibb.co/s2rnyBP/logo-tango-footer.png" alt="tango-logo" />
+                    <a href="#">
+                        <img src="https://i.ibb.co/s2rnyBP/logo-tango-footer.png" alt="tango-logo" />
+                    </a>
                 </div>
 
                 <div className='footerForms'>
 
                     <div className='footerForms-title'>
-                        <h3>Contactanos</h3>
+                        <h3>Contáctanos</h3>
                     </div>
 
 

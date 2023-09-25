@@ -36,8 +36,20 @@ footer {
     right: 0;
 }
 
-.footerInfo div img {
+.socialMediaImgFooter {
     width: 4vw;
+    height: auto;
+}
+
+.relojImgFooter {
+    width: 2vw;
+    height: auto;
+}
+
+.footerLogo a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: auto;
 }
 
@@ -79,6 +91,7 @@ footer {
 
 
 .inputForm input {
+    color: #fff;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
@@ -301,6 +314,12 @@ footer {
         right: 0;
     }
 
+    .footerLogo a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
     
     .footerLogo img {
         position: relative;
@@ -418,8 +437,19 @@ footer {
         gap: 12px;
     }
 
-    .footerInfo > div > img {
+    
+    .socialMediaImgFooter {
         width: 10vw;
+        height: auto;
+    }
+    
+    .relojImgFooter {
+        width: 5vw;
+        height: auto;
+    }
+
+    .footerSocialMedia {
+        width: 10vw !important;
         height: auto;
     }
     
@@ -430,6 +460,13 @@ footer {
 
 
     .footerLogo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .footerLogo a {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -487,6 +524,7 @@ footer {
         top: 0.5rem;
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
 
     .inputForm > button > img {
@@ -546,7 +584,7 @@ footer {
 }
 
 /*************** Pantallas tablet, por ALTURA 768px *******************/
-@media (min-height: 1350px) {
+/* @media (min-height: 1350px) {
     footer {
         background-color: #343A40;
         color: #fff;
@@ -625,11 +663,7 @@ footer {
         display: flex;
         justify-self: left;
     }
-    /* .footerForms h3 {
-        position: absolute;
-        top: 0;
-        left: 0;
-    } */
+
 
     .footerForms form {
         display: flex;
@@ -670,4 +704,4 @@ footer {
     }
     
   
-  }
+  } */

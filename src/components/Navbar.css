@@ -79,9 +79,10 @@
 /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
 @media (min-width: 1441px) {
   .navbar-links a {
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 2rem;
   }
+
 
   .navbar-links a.active {
     
@@ -195,7 +196,7 @@
 }
 
 /*************** Pantallas tABLET L, altura 1350px *******************/
-@media (min-height: 1350px) {
+/* @media (min-height: 1350px) {
   .navbar-logo img{
     width: 20vw;
     height: auto;
@@ -233,7 +234,7 @@
     width: 3vw;
     height: auto;
   }
-}
+} */
 
 /*********************
 

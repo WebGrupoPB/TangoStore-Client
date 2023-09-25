@@ -2,11 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import paidSvg from '../assets/icons/Paid.svg';
-import './/Navbar.css';
-
+import './Navbar.css';
 
 const Navbar = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -52,115 +50,102 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-
     <nav className="navbar">
-        <div className="navbar-logo"><Link to={"/"}><img src="https://i.ibb.co/gZTfkzs/Logo-Tango-1.png" alt="logo-tango" /></Link></div>
+      <div className="navbar-logo">
+        <a href="#" onClick={scrollToTop}>
+          <img src="https://i.ibb.co/gZTfkzs/Logo-Tango-1.png" alt="logo-tango" />
+        </a>
+      </div>
 
-        
-        <div className='showMenu'>
-          <button className="hamburger-button" onClick={() => {
-            if (menuOpen) {
-              closeMenu();
-            } else {
-              toggleMenu();
-            }
-          }}>
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
-        </div>
+      <div className='showMenu'>
+        <button className="hamburger-button" onClick={() => {
+          if (menuOpen) {
+            closeMenu();
+          } else {
+            toggleMenu();
+          }
+        }}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
 
-        {menuOpen && (
-          <div className='menuMovil'>
-            <div className="navbar-links">
-              <NavLink to={'/'} 
-                className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }>
-                Tiendas de Conveninencia
-              </NavLink>
-
-              <NavLink to={'/menu'} className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }>
-                Menú
-              </NavLink>
-
-              {/* <NavLink to={'/promociones'} className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }>
-                Promociones
-              </NavLink>
-
-              <NavLink to={'/servicios'} className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }>
-                Servicios
-              </NavLink> */}
-
-              <NavLink to={'/empleos'} className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }>
-                Empleos
-              </NavLink>
-                
-
-              <a href="#store"><span className='storeButton'>Tango Store <img src={paidSvg} alt="canasta-compra"/> </span></a>  
-            </div>
-
-            
-          </div>
-        )}
-        
-        
-        <div className='menuDesktop'>
+      {menuOpen && (
+        <div className='menuMovil'>
           <div className="navbar-links">
-            <NavLink to={'/'} 
-              className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
-              Tiendas de Conveninencia
+            <NavLink
+              to={'/'}
+              activeClassName="active"
+              isActive={(match, location) => {
+                return location.hash === '' || location.hash === '#/';
+              }}
+            >
+              Tiendas de Conveniencia
             </NavLink>
 
-            <NavLink to={'/menu'} className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
+            <a href="/#promociones">
+              Promociones
+            </a>
+
+            <a href="/#servicios">
+              Servicios
+            </a>
+
+            <NavLink to={'/menu'} activeClassName="active" onClick={scrollToTop}>
               Menú
             </NavLink>
 
-            {/* <NavLink to={'/promociones'} className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
-              Promociones
-            </NavLink>
-
-            <NavLink to={'/servicios'} className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
-              Servicios
-            </NavLink> */}
-
-            <NavLink to={'/empleos'} className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }>
+            <NavLink to={'/empleos'} activeClassName="active" onClick={scrollToTop}>
               Empleos
             </NavLink>
-              
+
+            <a href="#store">
+              <span className='storeButton'>Tango Store <img src={paidSvg} alt="canasta-compra" /> </span>
+            </a>
           </div>
         </div>
-        
-        
+      )}
 
-        <div className='menuDesktop'>
-          <div className="navbar-links"><a href="#store"><span className='storeButton'>Tango Store <img src={paidSvg} alt="canasta-compra"/> </span></a></div>
+      <div className='menuDesktop'>
+        <div className="navbar-links">
+          <NavLink to={'/'} activeClassName="active" onClick={scrollToTop}>  
+            Tiendas de Conveniencia
+          </NavLink>
+
+          <a href="/#promociones">
+            Promociones
+          </a>
+
+          <a href="/#servicios">
+            Servicios
+          </a>
+
+          <NavLink to={'/menu'} activeClassName="active" onClick={scrollToTop}>
+            Menú
+          </NavLink>
+
+          <NavLink to={'/empleos'} activeClassName="active" onClick={scrollToTop}>
+            Empleos
+          </NavLink>
         </div>
-        
-        
-    </nav>
+      </div>
 
+      <div className='menuDesktop'>
+        <div className="navbar-links">
+          <a href="#">
+            <span className='storeButton'>Tango Store <img src={paidSvg} alt="canasta-compra" /> </span>
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 };
 
 export default Navbar;
+

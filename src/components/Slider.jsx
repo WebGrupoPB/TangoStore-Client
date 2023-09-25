@@ -60,17 +60,6 @@ const InfoHeroEmpleos = () => (
 
     <p className="panel-info">Únete a Nuestro Equipo de Atención al Cliente en la Mejor tienda de conveniencia de el país. </p>
 
-    <div className='redesEmpleo'> 
-      <h5>redes sociales</h5>
-
-      <div>
-        <a href="https://www.facebook.com/Tangostore.la?mibextid=LQQJ4d" target="_blank"><img src={facebookYellow} alt="a" /></a>
-        <a href="https://instagram.com/tangostore.la?igshid=MzRlODBiNWFlZA==" target="_blank"><img src={instagramYellow} alt="b" /></a>
-        <a href="https://www.google.com/maps/search/Tango+Store/@14.6294877,-91.6623839,9z/data=!3m1!4b1?entry=ttu" target="_blank"><img src={googleMapYellow} alt="c" /></a>
-      </div>
-
-    </div>
-
   </div>
 );
 

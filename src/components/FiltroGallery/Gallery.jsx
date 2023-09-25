@@ -4,25 +4,59 @@ import React, { useState } from 'react';
 import './FilterGallery.css'; // Agrega tu archivo CSS aquí
 import ImageGallery from './ImageGallery';
 
-export const GalleryCategory = ({ title, images, onMouseEnter, onMouseLeave, hoveredImage }) => {
-  // Usamos un objeto para almacenar el estado isHovered para cada imagen
-  const [hoveredImages, setHoveredImages] = useState({});
 
-  const handleMouseEnter = (index) => {
-    // Establecer isHovered como verdadero para la imagen en el índice dado
-    setHoveredImages({ ...hoveredImages, [index]: true });
-  };
+const HotDogDescripton = () => {
+  return (
+    <div className='categoryOptions'>
+      <h4>Opciones a elegir</h4>
 
-  const handleMouseLeave = (index) => {
-    // Establecer isHovered como falso para la imagen en el índice dado
-    setHoveredImages({ ...hoveredImages, [index]: false });
-  };
+      <p>
+        <table>
+          <tr>
+            <td>Pan</td>
+            <td>Salchicha</td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul>
+                <li>Especies italianas</li>
+                <li>Parmesano</li>
+              </ul>
+            </td>
+
+            <td>
+              <ul>
+                <li>
+                  Thuringer: Salchicha tipo alemana a base de
+                              semilla de mostaza y carne de cerdo.
+                </li>
+                <li>
+                  Bock: Salchicha tipo alemana ahumada con especies.
+                </li>
+              </ul>
+            </td>
+          </tr>
+          
+        </table>
+      </p>
+    </div>
+  )
+  
+}
+
+
+
+export const GalleryCategory = ({ title, images }) => {
+  
 
   return (
     <div className="row">
       {title !== 'all' && (
+
         <div>
           <h2 className='categoryTitle'>{title}</h2>
+
           <div className="row">
             {images.map((image, index) => (
    
@@ -30,7 +64,10 @@ export const GalleryCategory = ({ title, images, onMouseEnter, onMouseLeave, hov
               
             ))}
           </div>
+
+          {title === 'hot dogs' && <HotDogDescripton />}
         </div>
+
       )}
     </div>
   );

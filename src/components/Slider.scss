@@ -100,9 +100,10 @@ aside.panel {
 	  
 	
 	h1.promotionText {
+		text-transform: uppercase;
 		color: rgb(252,  193, 44);
 		font-family: 'Arial Black';
-		font-size: 4rem;
+		font-size: 3.5rem;
 		line-height: 75px;
 		-webkit-text-fill-color: rgb(252,  193, 44); 
 		-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
@@ -652,6 +653,11 @@ div.lineDecoration {
 		display: none;
 	}
 
+	.tangoLogo-empleos {
+		width: 75%;
+		height: auto;
+	}
+
 	
 }
 
@@ -779,7 +785,7 @@ div.lineDecoration {
 
 
 /*************** Pantallas tablet, por ALTURA 768px *******************/
-@media (min-height: 1350px) {
+/* @media (min-height: 1350px) {
 	section.wrapper {
 		position: relative;
 		width: 100%;
@@ -802,7 +808,6 @@ div.lineDecoration {
 	
 		
 		div.redesEmpleo {
-			/* background-color: rgba(0, 0, 0, 1) !important; */
 			opacity: 1;
 			width: 20vw;
 			height: 10vh;
@@ -820,7 +825,6 @@ div.lineDecoration {
 	
 			h5 {
 				position: relative;
-				/* bottom: 1.5rem; */
 				color: rgb(252, 193, 44);
 				font-size: 1.2rem;
 			}
@@ -855,7 +859,7 @@ div.lineDecoration {
 			font-size: 3rem;
 			line-height: 60px;
 			-webkit-text-fill-color: rgb(252,  193, 44); 
-			-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
+			-webkit-text-stroke-width: 2px;
 			  -webkit-text-stroke-color: #fff;
 		}
 		
@@ -889,10 +893,6 @@ div.lineDecoration {
 			left: 2rem;
 		}
 
-		/* .img-table {
-			width: 2.25vw;
-			height: auto;
-		} */
 	}
 
 	div.lineDecoration { 
@@ -906,4 +906,4 @@ div.lineDecoration {
 		height: auto;
 		margin: 5vh auto;
 	}
-}
+} */
