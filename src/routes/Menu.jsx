@@ -104,19 +104,19 @@ const Menu = () => {
       category: 'panini',
       title: 'Italiano', 
       description: 'Trenza francesa, jamón virginia, jamón de pavo, salami, queso cheddar, queso suizo, lechuga y champiñones.',
-      imageUrl: 'https://i.ibb.co/wdfZ6c5/panini-italiano.png' 
+      imageUrl: 'https://i.ibb.co/Mh8j5k1/panini-italiano.png' 
     },
     { 
       category: 'panini',
       title: 'Pechugo', 
       description: 'Trenza francesa, pechuga a la parrilla, guacamol, queso cheddar, champiñones y aderezo chipotle.',
-      imageUrl: 'https://i.ibb.co/v4zq2hJ/pechugo.png' 
+      imageUrl: 'https://i.ibb.co/yWj0xr0/panini-pechugo.png' 
     },
     { 
       category: 'panini',
       title: 'Philly Steak', 
       description: 'Trenza francesa, lomito de res, queso suizo, chile pimiento, cebolla caramelizada y aderezo de hierbas',
-      imageUrl: 'https://i.ibb.co/v4zq2hJ/pechugo.png' 
+      imageUrl: 'https://i.ibb.co/XVPmMb0/panini-philly-Steak.png' 
     },
     { 
       category: 'sopa',

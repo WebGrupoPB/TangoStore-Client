@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link} from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Slider from '../components/Slider'
 import Footer from '../components/Footer';
 import Decoradores from '../components/Decoradores';
+import Popup from '../components/AnuncioPopup';
 import './styles/Home.css';
 
 
@@ -13,11 +14,11 @@ import mapMarker from "../assets/icons/Map Marker.png"
 const dataHero = [
   {
     id: 0,
-    img: 'https://i.ibb.co/gTvX3TP/3.png',
+    img: 'https://i.ibb.co/HxBCLGF/Slider-Home1.png',
   },
   {
     id: 1,
-    img: 'https://i.ibb.co/8PC5JM3/3.png',
+    img: 'https://i.ibb.co/tcmv14S/Slider-Home2.png',
   },
   {
     id: 2,
@@ -55,6 +56,27 @@ const dataPromotions = [
 
 
 const Home = () => {
+
+   // Estado para controlar la visibilidad del Popup
+   const [showPopup, setShowPopup] = useState(false);
+
+   // Efecto para mostrar el Popup después de 5 segundos
+   useEffect(() => {
+     const popupTimer = setTimeout(() => {
+       setShowPopup(true);
+     }, 5000); // 5000 milisegundos (5 segundos)
+ 
+     // Limpieza del temporizador cuando se desmonta el componente
+     return () => {
+       clearTimeout(popupTimer);
+     };
+   }, []); // El segundo argumento, un array vacío, asegura que el efecto solo se ejecute una vez al montar el componente.
+ 
+   // Función para cerrar el Popup
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <div>
       <header>
@@ -65,6 +87,11 @@ const Home = () => {
         
         <Decoradores />
 
+        
+        {/* Mostrar el Popup si showPopup es verdadero */}
+        {showPopup && (
+          <Popup handleClosePopup={handleClosePopup} />
+        )}
 
         <div className='hero-space' id="hero-space">
           <section className='hero-slider'>
@@ -73,6 +100,8 @@ const Home = () => {
 
           </section>
         </div>
+
+        
         
 
         <section className='ver-menu'>

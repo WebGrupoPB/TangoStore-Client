@@ -28,10 +28,10 @@ import {
     path: "/menu",
     element: <Menu />,
   },
-  /* {
+  {
     path: "/prueba",
     element: <Prueba />,
-  }, */
+  },
 
  ]); 
 
