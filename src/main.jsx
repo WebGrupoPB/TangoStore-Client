@@ -4,6 +4,7 @@ import App from './App.jsx'
 import Home from './routes/Home.jsx'
 import Empleos from './routes/Empleos.jsx'
 import Prueba from './routes/Prueba.jsx'
+import MenuPDF from './routes/MenuPDF.jsx'
 import Menu from './routes/Menu.jsx'
 import Error from './routes/Error.jsx'
 import './index.css'
@@ -25,13 +26,17 @@ import {
     element: <Empleos />,
   },
   {
-    path: "/menu",
+    path: "/productos",
     element: <Menu />,
   },
   {
+    path: "/menu",
+    element: <MenuPDF />,
+  },
+  /* {
     path: "/prueba",
     element: <Prueba />,
-  },
+  }, */
 
  ]); 
 
