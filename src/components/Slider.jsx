@@ -4,7 +4,7 @@ import './Slider.scss';
 
 import burguerPng from '../assets/icons/hamburguesa.png'
 import donaPng from '../assets/icons/dona.png'
-import tazaPng from '../assets/icons/taza.png'
+import abarrotesPng from '../assets/icons/abarrotes.png'
 import refrescoPng from '../assets/icons/refresco.png'
 
 import facebookYellow from '../assets/icons/Facebook_Yellow.png'
@@ -14,42 +14,42 @@ import googleMapYellow from '../assets/icons/GoogleMap_Yellow.png'
 
 // este componente define el contenido del panel, Slider 1 (Hero del Home Page)
 const InfoHeroHome = () => ( 
-      <div>
+  <div>
 
-        <h2 className="panel-header"><strong>Tiendas Tango</strong></h2>
+    <h2 className="panel-header"><strong>Tiendas Tango</strong></h2>
 
-        <p className="panel-info">En nuestras tiendas, puedes encontrar una amplia variedad de productos para satisfacer tus necesidades diarias.</p>
+    <p className="panel-info">En nuestras tiendas, puedes encontrar una amplia variedad de productos para satisfacer tus necesidades diarias.</p>
 
-        <p className="panel-info">
-          Desde:
+    <p className="panel-info">
+      Desde:
 
-          <table className='panel-table'>
-            <tr>
-              <td><img src={burguerPng} alt="hamburguesa" className="img-table" /></td>
-              <td><b>Alimentos</b></td>
-            </tr>
+      <table className='panel-table'>
+        <tr>
+          <td><img src={burguerPng} alt="hamburguesa" className="img-table" /></td>
+          <td><b>Alimentos</b></td>
+        </tr>
 
-            <tr>
-              <td><img src={donaPng} alt="dona" className="img-table" /></td>
-              <td><b>Snacks</b></td>
-            </tr>
+        <tr>
+          <td><img src={donaPng} alt="dona" className="img-table" /></td>
+          <td><b>Snacks</b></td>
+        </tr>
 
-            <tr>
-              <td><img src={tazaPng} alt="tazaCafe" className="img-table" /></td>
-              <td><b>Bebidas Calientes</b></td>
-            </tr>
+        <tr>
+          <td><img src={refrescoPng} alt="refresco" className="img-table" /></td>
+          <td><b>Bebidas Frías Calientes</b></td>
+        </tr>
 
-            <tr>
-              <td><img src={refrescoPng} alt="refresco" className="img-table" /></td>
-              <td><b>Bebidas Frías</b></td>
-            </tr>
-            
-          </table>
-        </p>
+        <tr>
+          <td><img src={abarrotesPng} alt="refresco" className="img-table" /></td>
+          <td><b>Abarrotes</b></td>
+        </tr>
+        
+      </table>
+    </p>
 
-        <p className="panel-info">Tenemos todo lo que necesitas en un solo lugar.</p>
+    <p className="panel-info">Tenemos todo lo que necesitas en un solo lugar.</p>
 
-      </div>
+  </div>
 );
 
 // este componente define el contenido del panel, Slider 2 (Hero del Empleos Page)

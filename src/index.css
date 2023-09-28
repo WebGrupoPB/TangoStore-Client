@@ -1,130 +1,135 @@
 @font-face {
-    font-family: 'Moderat';
-    src: url('../assets/fonts/Moderat-Regular.ttf') format('truetype');
-  }
+  font-family: 'Moderat';
+  src: url('../assets/fonts/Moderat-Regular.ttf') format('truetype');
+}
 
 body {
-    font-family: 'Moderat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Moderat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header { 
-  background-color: #E53F15;
-  width: 100%;
-  height: 12.5vh;
-  display: flex;
-  justify-content: center;
-  min-width: 100%;
-  position: sticky;
+background-color: #E53F15;
+width: 100%;
+height: 12.5vh;
+display: flex;
+justify-content: center;
+min-width: 100%;
+position: sticky;
 }
 
 
 .text-square {
-  background-color: rgb(252,  193, 44);
-  width: 1.4rem;
-  height: 16rem;
-  position: fixed;
-  top: 40vh;
-  left: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
+background-color: rgb(252,  193, 44);
+width: 1.4rem;
+height: 16rem;
+position: fixed;
+top: 40vh;
+left: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 2;
 }
 
 .text-square span {
-  color: #fff;
-  transform: rotate(90deg);
-  transform-origin: center center;
-  white-space: nowrap;
-  
+color: #fff;
+transform: rotate(90deg);
+transform-origin: center center;
+white-space: nowrap;
+
 }
 
 .line-decoration {
-  background-color: #E53F15;
-  width: .3rem;
-  height: 16rem;
-  position: fixed;
-  top: 40vh;
-  left: 0;
-  z-index: 2;
+background-color: #E53F15;
+width: .3rem;
+height: 16rem;
+position: fixed;
+top: 40vh;
+left: 0;
+z-index: 2;
 }
 
 .social-media { 
-  background-color: transparent;
-  width: 5rem;
-  height: 16rem;
-  position: fixed;
-  bottom: 0vh;
-  right: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
+background-color: transparent;
+width: 5rem;
+height: 16rem;
+position: fixed;
+bottom: 0vh;
+right: 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+z-index: 2;
 }
 
 .circle-icon {
-  background-color: #fff;
-  width: 3.5rem;
-  height: 3.5rem;
-  margin: 5px 0;
-  border: 4px solid rgb(252,  193, 44);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+background-color: #fff;
+width: 3.5rem;
+height: 3.5rem;
+margin: 5px 0;
+border: 4px solid rgb(252,  193, 44);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .circle-icon img {
-  width: 3rem;
-  height: 3rem;
+width: 3rem;
+height: 3rem;
+}
+
+.whatsappIcon {
+width: 3.25rem !important;
+height: 3.25rem !important;
 }
 
 
 .bubbleChat {
-  position: absolute;
-  bottom: 15%;
-  left: -225%;  
-  width: 12rem;
-  height: 4rem;
-  /* border: 1px solid red; */
-  display: flex;
-  
+position: absolute;
+bottom: 15%;
+left: -225%;  
+width: 12rem;
+height: 4rem;
+/* border: 1px solid red; */
+display: flex;
+
 
 }
 
 
 .squareBubble {
-  background-color: #fff;
-  width: 12rem;
-  height: 4rem;
-  /* border: 1px solid #000; */
-  border-radius: 8px;
-  line-height: 1px;
-  text-align: left;
+background-color: #fff;
+width: 12rem;
+height: 4rem;
+/* border: 1px solid #000; */
+border-radius: 8px;
+line-height: 1px;
+text-align: left;
 }
 
 .squareBubble > h4 {
-  margin-left: 12px;
-  font-size: 1rem;
+margin-left: 12px;
+font-size: 1rem;
 }
 
 .squareBubble > p {
-  margin-left: 12px;
-  font-size: .8rem;
+margin-left: 12px;
+font-size: .8rem;
 }
 
 .trianguleBubble {
-  
-  position: relative;
-  top: 55%;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent; /* Lado izquierdo transparente */
-  border-bottom: 10px solid transparent; /* Lado derecho transparente */
-  border-left: 20px solid #fff; /* Lado inferior sólido (el color define el color del triángulo) */
+
+position: relative;
+top: 55%;
+width: 0;
+height: 0;
+border-top: 10px solid transparent; /* Lado izquierdo transparente */
+border-bottom: 10px solid transparent; /* Lado derecho transparente */
+border-left: 20px solid #fff; /* Lado inferior sólido (el color define el color del triángulo) */
 }
 
 
@@ -134,160 +139,160 @@ header {
 
 /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
 @media (min-width: 1441px) {
-  .text-square {
-    width: 2.5rem;
-    height: 32rem;
-    position: fixed;
-    top: 40vh;
-    left: 1rem;    
-  }
-  
-  .text-square span {
-    font-size: 2rem
-  }
-  
-  .line-decoration {
-    width: .6rem;
-    height: 32rem;
-  }
-  
-  .social-media { 
-    width: 8rem;
-    height: 28rem;
-    position: fixed;
-    bottom: 0vh;
-    right: 0px;
-  }
-  
-  .circle-icon {
-    width: 6rem;
-    height: 6rem;
-    margin: 12px 0;
-    border: 8px solid rgb(252,  193, 44);
-    border-radius: 50%;
-  }
-  
-  .circle-icon img {
-    width: 5rem;
-    height: 5rem;
-  }
+.text-square {
+  width: 2.5rem;
+  height: 32rem;
+  position: fixed;
+  top: 40vh;
+  left: 1rem;    
+}
 
-  .bubbleChat {
-    position: absolute;
-    bottom: 12%;
-    left: -280%;  
-    width: 24rem;
-    height: 8rem;
-    /* border: 1px solid red; */
-    display: flex;
-  }
+.text-square span {
+  font-size: 2rem
+}
 
-  .squareBubble {
-    background-color: #fff;
-    width: 24rem;
-    height: 8rem;
-    /* border: 1px solid #000; */
-    border-radius: 8px;
-    line-height: 1px;
-    text-align: left;
-  }
+.line-decoration {
+  width: .6rem;
+  height: 32rem;
+}
 
-  .squareBubble > h4 {
-    margin-left: 12px;
-    font-size: 2rem;
-  }
-  
-  .squareBubble > p {
-    margin-left: 12px;
-    font-size: 1.6rem;
-  }
+.social-media { 
+  width: 8rem;
+  height: 28rem;
+  position: fixed;
+  bottom: 0vh;
+  right: 0px;
+}
 
-  .trianguleBubble {
-  
-    position: relative;
-    top: 55%;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent; /* Lado izquierdo transparente */
-    border-bottom: 20px solid transparent; /* Lado derecho transparente */
-    border-left: 40px solid #fff; /* Lado inferior sólido (el color define el color del triángulo) */
-  }
+.circle-icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 12px 0;
+  border: 8px solid rgb(252,  193, 44);
+  border-radius: 50%;
+}
+
+.circle-icon img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.bubbleChat {
+  position: absolute;
+  bottom: 12%;
+  left: -280%;  
+  width: 24rem;
+  height: 8rem;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.squareBubble {
+  background-color: #fff;
+  width: 24rem;
+  height: 8rem;
+  /* border: 1px solid #000; */
+  border-radius: 8px;
+  line-height: 1px;
+  text-align: left;
+}
+
+.squareBubble > h4 {
+  margin-left: 12px;
+  font-size: 2rem;
+}
+
+.squareBubble > p {
+  margin-left: 12px;
+  font-size: 1.6rem;
+}
+
+.trianguleBubble {
+
+  position: relative;
+  top: 55%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent; /* Lado izquierdo transparente */
+  border-bottom: 20px solid transparent; /* Lado derecho transparente */
+  border-left: 40px solid #fff; /* Lado inferior sólido (el color define el color del triángulo) */
+}
 }
 
 
 /*************** Pantallas Laptop, 1024px *******************/
 @media (max-width: 1024px) {
-  .text-square {
-    width: 1rem;
-    height: 14rem;
-    position: fixed;
-    top: 40vh;
-    left: 0.45rem;    
-  }
-  
-  .text-square span {
-    font-size: 0.8rem
-  }
-  
-  .line-decoration {
-    width: .3rem;
-    height: 14rem;
-  }
-  
-  .social-media { 
-    width: 4rem;
-    height: 14rem;
-    position: fixed;
-    bottom: 0vh;
-    right: 0px;
-  }
-  
-  .circle-icon {
-    width: 2.8rem;
-    height: 2.8rem;
-    margin: 5px 0;
-    border: 3px solid rgb(252,  193, 44);
-    
-  }
-  
-  .circle-icon img {
-    width: 2.3rem;
-    height: 2.3rem;
-  }
-
-  .bubbleChat {
-    position: absolute;
-    bottom: 15%;
-    left: -290%;  
-    width: 12rem;
-    height: 4rem;
-    /* border: 1px solid red; */
-    display: flex;
-    
-  
-  }
+.text-square {
+  width: 1rem;
+  height: 14rem;
+  position: fixed;
+  top: 40vh;
+  left: 0.45rem;    
 }
+
+.text-square span {
+  font-size: 0.8rem
+}
+
+.line-decoration {
+  width: .3rem;
+  height: 14rem;
+}
+
+.social-media { 
+  width: 4rem;
+  height: 14rem;
+  position: fixed;
+  bottom: 0vh;
+  right: 0px;
+}
+
+.circle-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 5px 0;
+  border: 3px solid rgb(252,  193, 44);
   
+}
+
+.circle-icon img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.bubbleChat {
+  position: absolute;
+  bottom: 15%;
+  left: -290%;  
+  width: 12rem;
+  height: 4rem;
+  /* border: 1px solid red; */
+  display: flex;
+  
+
+}
+}
+
 
 
 
 /*************** Pantallas moviles L/M/S, 768px *******************/
 @media (max-width: 500px) {
-  .text-square {
-    display: none;
-  }
-  
-  .text-square span {
-    display: none;
-  }
-  
-  .line-decoration {
-    display: none;
-  }
-  
-  .social-media { 
-    display: none;
-  }
-  
+.text-square {
+  display: none;
+}
+
+.text-square span {
+  display: none;
+}
+
+.line-decoration {
+  display: none;
+}
+
+.social-media { 
+  display: none;
+}
+
 
 }

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 import instagramPng from '../assets/icons/instagram.png'
 import facebookPng from '../assets/icons/facebook.png'
-import trianguloPng from '../assets/icons/tango-triangulo.png'
+import whatsappPng from '../assets/icons/whatsappIcon.png'
 
 
 const ChatBubble = () => {
@@ -66,7 +66,7 @@ const Decoradores = () => {
               onMouseEnter={handleHover}
               onMouseLeave={handleMouseLeave}
             >
-              <img src={trianguloPng} alt="tango-triangulo"/>
+              <img src={whatsappPng} alt="whatsapp" className='whatsappIcon' />
           </div> 
           </a>
           {isHovered && <ChatBubble />}
