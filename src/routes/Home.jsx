@@ -9,20 +9,23 @@ import './styles/Home.css';
 
 
 import mapMarker from "../assets/icons/Map Marker.png"
+import autoGo from "../../public/AutoGo_logo.png"
+import grabGo from "../../public/Grab&Go_logo.png"
+
 
 
 const dataHero = [
   {
     id: 0,
-    img: 'https://i.ibb.co/HxBCLGF/Slider-Home1.png',
+    img: 'https://i.ibb.co/gTvX3TP/3.png',
   },
   {
     id: 1,
-    img: 'https://i.ibb.co/tcmv14S/Slider-Home2.png',
+    img: 'https://i.ibb.co/HXcj1Rr/2.png',
   },
   {
     id: 2,
-    img: 'https://i.ibb.co/HXcj1Rr/2.png',
+    img: 'https://i.ibb.co/cyFhzSc/4.png',
   },
   {
     id: 3,
@@ -77,6 +80,11 @@ const Home = () => {
     setShowPopup(false);
   };
 
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div>
       <header>
@@ -89,9 +97,9 @@ const Home = () => {
 
         
         {/* Mostrar el Popup si showPopup es verdadero */}
-        {showPopup && (
+        {/* {showPopup && (
           <Popup handleClosePopup={handleClosePopup} />
-        )}
+        )} */}
 
         <div className='hero-space' id="hero-space">
           <section className='hero-slider'>
@@ -107,8 +115,8 @@ const Home = () => {
         <section className='ver-menu'>
 
           <div className='text-tandog'>
-            <h2>Conoce nuestro menú y elije tu favorito</h2>
-            <Link to={'/menu'}><span className='verMenuBtn'>ver menú</span></Link>
+            <h2>Conoce nuestro menú y elige tu favorito</h2>
+            <Link to={'/menu'} onClick={scrollToTop}><span className='verMenuBtn'>ver menú</span></Link>
           </div>
 
           <div className='tango-fondo'>
@@ -142,6 +150,56 @@ const Home = () => {
 
           <div className='ubi-image'>
             <img src="https://i.ibb.co/w7FffsP/mapa.png" alt="mapa-guatemala" />
+          </div>
+
+        </section>
+
+        <section className='videoPromo-section'>
+
+          <div className='GrabGo-div'>            
+
+            <div className='iframe-GrabGo'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DQqsOyBLz78?si=4fgg2VQuUKLuCuf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoGrabgo'></iframe>
+            </div>
+
+            <div className='text-Grabgo'>
+              <span><img src={grabGo} alt="" className='grabgo-logoimg' /></span>
+
+              <p>
+                Descubre la comodidad sin igual de nuestro <b>"Grab & Go" </b> 
+                Comida lista para <b>calentar</b> en <b>minutos</b>.
+              </p>
+
+              <p><b>Ingredientes frescos</b> y sabores excepcionales.</p>
+              
+              <p>Satisfacción instantánea para tu paladar.</p>
+
+              <h4>¡Visítanos y disfruta de la mejor comida en segundos!</h4>
+            </div>
+
+          </div>
+
+          <div className='AutoGo-div'>
+
+            <div className='text-Autogo'>
+              <span><img src={autoGo} alt="" className='autogo-logoimg' /></span>
+
+              <p>Bienvenido a Autogo donde el <b>sabor</b> y <b>rapidez</b> se encuentran</p>
+
+              <p>
+                Sin <b>esperar</b> largas <b>filas</b> y en la comodidad de tu vehículo
+                solo ingredientes de primera calidad y sabores excepcionales.
+              </p>
+
+              <p>Nuestro menú se renueva constantemente para mantenerte emocionado.</p>
+
+              <h4>¡Ven y descubre la mejor comida al instante!</h4>
+            </div>
+
+            <div className='iframe-AutoGo'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/X6q9zfrRujk?si=OO_zt2juqIG7-m6I&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoAutoGo'></iframe>
+            </div>
+
           </div>
 
         </section>

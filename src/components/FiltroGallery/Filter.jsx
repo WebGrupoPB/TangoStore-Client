@@ -14,6 +14,8 @@ import postre from '../../assets/icons/menu/Pie.png'
 import snack from '../../assets/icons/menu/Guacamole.png'
 import caliente from '../../assets/icons/menu/TeaPair.png'
 import fria from '../../assets/icons/menu/CocktailShot.png'
+import panaderia from '../../assets/icons/menu/panaderiaIcon.png'
+
 
 
 const Filter = ({ activeFilter, handleFilterClick }) => {
@@ -75,16 +77,20 @@ const Filter = ({ activeFilter, handleFilterClick }) => {
       img: `${snack}`, 
     },
     { 
+      id: 'panadería', 
+      name: 'Panaderia', 
+      img: `${panaderia}`, 
+    },
+    { 
       id: 'bebidas calientes', 
       name: 'Bebidas Calientes', 
       img: `${caliente}`, 
     },
     { 
-      id: 'bebidas frias', 
+      id: 'bebidas frías', 
       name: 'Bebidas Frías', 
       img: `${fria}`, 
-    },
-    
+    }, 
   ];
 
   return (

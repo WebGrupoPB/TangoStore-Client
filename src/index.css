@@ -82,6 +82,11 @@ header {
   height: 3rem;
 }
 
+.whatsappIcon {
+  width: 3.25rem !important;
+  height: 3.25rem !important;
+}
+
 
 .bubbleChat {
   position: absolute;

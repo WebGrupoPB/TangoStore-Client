@@ -4,12 +4,10 @@ import './Slider.scss';
 
 import burguerPng from '../assets/icons/hamburguesa.png'
 import donaPng from '../assets/icons/dona.png'
-import tazaPng from '../assets/icons/taza.png'
+import abarrotesPng from '../assets/icons/abarrotes.png'
 import refrescoPng from '../assets/icons/refresco.png'
 
-import facebookYellow from '../assets/icons/Facebook_Yellow.png'
-import instagramYellow from '../assets/icons/Instagram_Yellow.png'
-import googleMapYellow from '../assets/icons/GoogleMap_Yellow.png'
+
 
 
 // este componente define el contenido del panel, Slider 1 (Hero del Home Page)
@@ -35,13 +33,13 @@ const InfoHeroHome = () => (
             </tr>
 
             <tr>
-              <td><img src={tazaPng} alt="tazaCafe" className="img-table" /></td>
-              <td><b>Bebidas Calientes</b></td>
+              <td><img src={refrescoPng} alt="refresco" className="img-table" /></td>
+              <td><b>Bebidas Frías Calientes</b></td>
             </tr>
 
             <tr>
-              <td><img src={refrescoPng} alt="refresco" className="img-table" /></td>
-              <td><b>Bebidas Frías</b></td>
+              <td><img src={abarrotesPng} alt="refresco" className="img-table" /></td>
+              <td><b>Abarrotes</b></td>
             </tr>
             
           </table>

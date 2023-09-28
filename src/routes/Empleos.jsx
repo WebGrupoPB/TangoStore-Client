@@ -15,6 +15,10 @@ import trianguloPng from '../assets/icons/tango-triangulo.png'
 
 
 
+import fondoPlaza1 from "../../public/empleos/plazaImg1.png"
+import fondoPlaza2 from "../../public/empleos/plazaImg2.png"
+
+
 const dataHero1 = [
   {
     id: 0,
@@ -85,7 +89,7 @@ const Empleos = () => {
           <h2>Plazas Disponibles</h2>
 
           <div className='containerPlazas'>
-            <img src="https://i.ibb.co/dtLVYsC/IMAGEN-LATERAL-IZQUIERDO.png" alt="fondo1" className='fondo' />
+            <img src={fondoPlaza1} alt="fondo1" className='fondo' />
 
             <div className='contenidoPerfiles'>
               <div className='perfilesPlazas'>
@@ -128,7 +132,7 @@ const Empleos = () => {
             </div>
             
 
-            <img src="https://i.ibb.co/vvhgLkL/IMAGEN-LATERAL-DERECHO.png" alt="fondo2"  className='fondo'/>
+            <img src={fondoPlaza2} alt="fondo2"  className='fondo'/>
           </div>
           
         </section>
