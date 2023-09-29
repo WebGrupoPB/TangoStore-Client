@@ -159,7 +159,7 @@ const Home = () => {
           <div className='GrabGo-div'>            
 
             <div className='iframe-GrabGo'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/DQqsOyBLz78?si=4fgg2VQuUKLuCuf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoGrabgo'></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/bvmSKHkJ7fw?si=QK_QYPIEEXbQpJOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoGrabgo'></iframe>     
             </div>
 
             <div className='text-Grabgo'>
@@ -197,7 +197,7 @@ const Home = () => {
             </div>
 
             <div className='iframe-AutoGo'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/X6q9zfrRujk?si=OO_zt2juqIG7-m6I&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoAutoGo'></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/8XhXJ3FF0sE?si=jN0aloNYmk_K2ntN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoAutoGo'></iframe>
             </div>
 
           </div>

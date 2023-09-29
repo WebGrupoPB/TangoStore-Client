@@ -19,7 +19,6 @@ import fondoPlaza1 from "../../public/empleos/plazaImg1.png"
 import fondoPlaza2 from "../../public/empleos/plazaImg2.png"
 
 
-
 const dataHero1 = [
   {
     id: 0,

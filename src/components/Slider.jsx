@@ -7,9 +7,7 @@ import donaPng from '../assets/icons/dona.png'
 import abarrotesPng from '../assets/icons/abarrotes.png'
 import refrescoPng from '../assets/icons/refresco.png'
 
-import facebookYellow from '../assets/icons/Facebook_Yellow.png'
-import instagramYellow from '../assets/icons/Instagram_Yellow.png'
-import googleMapYellow from '../assets/icons/GoogleMap_Yellow.png'
+
 
 
 // este componente define el contenido del panel, Slider 1 (Hero del Home Page)
@@ -51,6 +49,7 @@ const InfoHeroHome = () => (
 
   </div>
 );
+
 
 // este componente define el contenido del panel, Slider 2 (Hero del Empleos Page)
 const InfoHeroEmpleos = () => ( 

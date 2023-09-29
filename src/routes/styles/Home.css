@@ -182,6 +182,8 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+
+  gap: 3rem;
 }
  
 .GrabGo-div {
@@ -195,7 +197,7 @@ header {
 }
 
 .GrabGo-div .iframe-GrabGo {
-  background-color: blue;
+  /* background-color: blue; */
   width: 55%;
   height: 60vh;
 }
@@ -292,7 +294,7 @@ header {
 }
 
 .AutoGo-div .iframe-AutoGo {
-  background-color: blue;
+  /* background-color: blue; */
   width: 55%;
   height: 60vh;
 }
@@ -304,7 +306,7 @@ header {
 
 .servicios-section {
   position: relative;
-  top: 120vh;
+  top: 125vh;
   background-color: #E53F15;
   width: 100%;
   height: 70vh;
@@ -455,6 +457,8 @@ header {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
+    gap: 6rem;
   }
    
   .GrabGo-div {
@@ -567,7 +571,7 @@ header {
   
   .servicios-section {
     position: relative;
-    top: 120vh;
+    top: 125vh;
     background-color: #E53F15;
     width: 100%;
     height: 70vh;
@@ -1007,6 +1011,8 @@ header {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
+    gap: 0rem;
   }
    
   .GrabGo-div {
@@ -1311,21 +1317,23 @@ header {
   
   .videoPromo-section{
     position: relative;
-    top: 65vh;
+    top: 45vh;
     /* background-color: blue; */
     width: 100%;
-    height: 100vh;
+    height: 150vh;
   
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
+    gap: 0rem;
   }
    
   .GrabGo-div {
     /* background-color: yellow; */
     width: 100%;
-    height: 70vh;
+    height: 80vh;
   
     display: flex;
     flex-direction: column;
@@ -1336,23 +1344,28 @@ header {
   
   
   .GrabGo-div .iframe-GrabGo {
-    background-color: transparent;
-    width: 55%;
-    height: 40vh;
+    /* background-color: red; */
+    width: 95%;
+    height:30vh;
+
+    display: grid;
+    place-content: center;
   }
   
   .GrabGo-div .videoGrabgo {
-    width: 100%;
-    height: 25vh;
+    width: 95vw;
+    height: 30vh;
   }
   
   .GrabGo-div .text-Grabgo {
-    /* background-color: red; */
-    width: 38%;
-    height: 40vh;
+    /* background-color: blue; */
+    width: 95%;
+    height: 50vh;
     
-    position: absolute;
-    right: 5%;
+    position: relative;
+    left: 0;
+    /* bottom: 10vh; */
+    
   
     display: flex;
     flex-direction: column;
@@ -1362,6 +1375,11 @@ header {
     text-align: left;
     /* line-height: 8px; */
     
+  }
+
+  .grabgo-logoimg {
+    width: 40vw;
+    height: auto;
   }
   
   .text-Grabgo h2 {
@@ -1382,29 +1400,36 @@ header {
   .AutoGo-div {
     /* background-color: green; */
     width: 100%;
-    height: 40vh;
-  
-    position: relative;
+    height: 80vh;
   
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   } 
   
   .AutoGo-div .text-Autogo {
-    /* background-color: red; */
-    width: 40%;
-    height: 40vh;
-  
+    /* background-color: green; */
+    width: 95%;
+    height: 50vh;
+    
     position: relative;
-    left: 3%;
+    left: 0;
+    /* bottom: 10vh; */
+    
   
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     justify-content: start;
   
-    text-align: right;
+    text-align: left;
+    /* line-height: 8px; */
+  }
+
+  .autogo-logoimg {
+    width: 40vw;
+    height: auto;
   }
   
   .text-Autogo h2 {
@@ -1423,19 +1448,22 @@ header {
   }
   
   .AutoGo-div .iframe-AutoGo {
-    background-color: transparent;
-    width: 55%;
-    height: 40vh;
+    /* background-color: red; */
+    width: 95%;
+    height:30vh;
+
+    display: grid;
+    place-content: center;
   }
   
   .AutoGo-div .videoAutoGo {
-    width: 100%;
-    height: 25vh;
+    width: 95vw;
+    height: 30vh;
   }
 
   .servicios-section {
     position: relative;
-    top: 75vh;
+    top: 70vh;
     background-color: #E53F15;
     width: 100%;
     min-height: 30vh;
@@ -1459,7 +1487,7 @@ header {
 
   .footerHome {
     position: relative;
-    top: 75vh;
+    top: 70vh;
   }
 }
 

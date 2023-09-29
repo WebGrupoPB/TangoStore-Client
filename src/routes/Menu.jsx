@@ -196,6 +196,30 @@ const Menu = () => {
       description: 'Deliciosos Frapes de Oreo, Caramelo y Mocca',
       imageUrl: 'https://i.ibb.co/NTn13mS/frappes.png' 
     },
+    { 
+      category: 'panadería', 
+      title: 'Volován',
+      description: 'Deliciosos volovanes de pollo',
+      imageUrl: 'https://i.ibb.co/4FGsDFd/volovan-pollo.png' 
+    },
+    { 
+      category: 'panadería', 
+      title: 'Croissant',
+      description: 'Exquisitos croissants simples, jamón y queso, queso crema, nutela o almendra',
+      imageUrl: 'https://i.ibb.co/wJpbwFH/croissant.png' 
+    },
+    { 
+      category: 'panadería', 
+      title: 'Polvorosas',
+      description: 'Deliciosas galletas polvorosas',
+      imageUrl: 'https://i.ibb.co/qWvTg6r/polvorosas.png' 
+    },
+    { 
+      category: 'panadería', 
+      title: 'Galletas',
+      description: 'Deliciosas galletas de mantequilla y canela',
+      imageUrl: 'https://i.ibb.co/1MqbLsr/galletas.png' 
+    },
   ];
 
 
@@ -230,7 +254,8 @@ const Menu = () => {
     postres: images.filter(image => image.category === 'postre'),
     snacks: images.filter(image => image.category === 'snack'),
     'bebidas calientes': images.filter(image => image.category === 'caliente'),
-    'bebidas frias': images.filter(image => image.category === 'fria'),
+    'bebidas frías': images.filter(image => image.category === 'fria'),
+    'panadería': images.filter(image => image.category === 'panadería'),
   };
 
 

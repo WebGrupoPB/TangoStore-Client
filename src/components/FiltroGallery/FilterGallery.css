@@ -1,13 +1,13 @@
 
 .container{
 	max-width: 95%;
-	margin:auto;
+	/* margin:auto; */
 }
 
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 2rem 0;
+	margin: 0rem 0 2rem 0;
 }
 
 img {
@@ -24,11 +24,11 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 6.25vw;
-    height: 11vh;
+    width: 10vw;
+    height: 16vh;
     
     cursor: pointer;
-	margin: 0px 4px;
+	margin: 12px 4px;
 }
 
 .filterBtn.active {
@@ -56,7 +56,7 @@ img {
 
 .gallery-filter .filter-item{
 	color: #000;
-	font-size: 12px;
+	font-size: 16px;
 	display: inline-block;
 	margin: 0px 10px 4px 10px;
 	border-bottom: 2px solid transparent;
