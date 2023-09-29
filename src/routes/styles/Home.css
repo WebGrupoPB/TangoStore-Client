@@ -1327,13 +1327,13 @@ header {
     justify-content: start;
     align-items: center;
 
-    gap: 0rem;
+    gap: 3rem;
   }
    
   .GrabGo-div {
     /* background-color: yellow; */
     width: 100%;
-    height: 80vh;
+    height: 70vh;
   
     display: flex;
     flex-direction: column;
