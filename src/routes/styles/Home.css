@@ -86,7 +86,7 @@ header {
 
 
 .food-section {
-  background-image: url('../../public/home/promociones-bg.png');
+  background-image: url('https://s3.amazonaws.com/tango.store/home/promociones-bg.png');
   background-size: cover;
   background-position: top;
   position: relative;
