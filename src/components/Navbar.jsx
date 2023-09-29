@@ -4,6 +4,11 @@ import { Link, NavLink } from 'react-router-dom';
 import paidSvg from '../assets/icons/Paid.svg';
 import './Navbar.css';
 
+import tangoNavbar from "../../public/Logo Tango navbar.png"
+
+
+
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -58,7 +63,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <a href="#" onClick={scrollToTop}>
-          <img src="https://i.ibb.co/gZTfkzs/Logo-Tango-1.png" alt="logo-tango" />
+          <img src={tangoNavbar} alt="logo-tango" />
         </a>
       </div>
 

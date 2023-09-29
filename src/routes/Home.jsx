@@ -9,8 +9,17 @@ import './styles/Home.css';
 
 
 import mapMarker from "../assets/icons/Map Marker.png"
-import autoGo from "../../public/AutoGo_logo.png"
-import grabGo from "../../public/Grab&Go_logo.png"
+import chilliDog from "../../public/home/chilli dog transparente.png"
+import mapaGuate from "../../public/home/mapa-guate.png"
+import autoGo from "../../public/home/AutoGo_logo.png"
+import grabGo from "../../public/home/Grab&Go_logo.png"
+import iconTango1 from "../../public/home/Iconos_tango1.png"
+import iconTango2 from "../../public/home/Iconos_tango2.png"
+import iconTango3 from "../../public/home/Iconos_tango3.png"
+import iconTango4 from "../../public/home/Iconos_tango4.png"
+
+
+
 
 
 
@@ -37,22 +46,22 @@ const dataPromotions = [
   {
     id: 0,
     text: "¡Prueba nuestros nuevos Milk shake!",
-    img: 'https://i.ibb.co/b7xN9mZ/1.png',
+    img: '../../public/home/slider2/Promociones-shake1.png',
   },
   {
     id: 1,
     text: "Milk Shake de Fresa, Chocolate y Chicle",
-    img: 'https://i.ibb.co/cwDfD2Z/2.png',
+    img: "../../public/home/slider2/Promociones-shake2.png",
   },
   {
     id: 2,
     text: "Disfruta de nuestras deliciosas pizzas Carnívora y Lomito",
-    img: 'https://i.ibb.co/k31zXjD/Promociones-2.png',
+    img: "../../public/home/slider2/Promociones-pizza1.png",
   }, 
   {
     id: 3,
     text: "Disfruta de nuestras deliciosas pizzas Veggie y Chipotle",
-    img: 'https://i.ibb.co/6BNPYBN/3.png',
+    img: "../../public/home/slider2/Promociones-pizza1.png",
   },
 ];
 
@@ -120,7 +129,7 @@ const Home = () => {
           </div>
 
           <div className='tango-fondo'>
-            <img src="https://i.ibb.co/JmNr11J/hot-dog.png" alt="tandog" loading='lazy' />
+            <img src={chilliDog} alt="tandog" loading='lazy' />
           </div>     
 
         </section>
@@ -149,7 +158,7 @@ const Home = () => {
           </div>
 
           <div className='ubi-image'>
-            <img src="https://i.ibb.co/w7FffsP/mapa.png" alt="mapa-guatemala" />
+            <img src={mapaGuate} alt="mapa-guatemala" />
           </div>
 
         </section>
@@ -208,10 +217,10 @@ const Home = () => {
           <h1>Servicios Disponibles</h1>
 
           <div>
-            <img src="https://i.ibb.co/9NHgwdC/4.png" alt="disponible 24/7" />
-            <img src="https://i.ibb.co/rGjZMV8/3.png" alt="para llevar" />
-            <img src="https://i.ibb.co/NVBTXjh/2.png" alt="cajeros" />
-            <img src="https://i.ibb.co/cYkbKMx/1.png" alt="baños" />
+            <img src={iconTango1} alt="disponible 24/7" />
+            <img src={iconTango2} alt="para llevar" />
+            <img src={iconTango3} alt="cajeros" />
+            <img src={iconTango4} alt="baños" />
           </div>
         </section>
 

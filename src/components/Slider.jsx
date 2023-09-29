@@ -6,6 +6,10 @@ import burguerPng from '../assets/icons/hamburguesa.png'
 import donaPng from '../assets/icons/dona.png'
 import abarrotesPng from '../assets/icons/abarrotes.png'
 import refrescoPng from '../assets/icons/refresco.png'
+import congeladosPng from '../assets/icons/congeladosIcon.png'
+
+
+import tangoLogoEmpleo from "../../public/empleos/tango-logo-empleo.png"
 
 
 
@@ -33,13 +37,18 @@ const InfoHeroHome = () => (
         </tr>
 
         <tr>
-          <td><img src={refrescoPng} alt="refresco" className="img-table" /></td>
+          <td><img src={refrescoPng} alt="abarrotes" className="img-table" /></td>
           <td><b>Bebidas Frías Calientes</b></td>
         </tr>
 
         <tr>
           <td><img src={abarrotesPng} alt="refresco" className="img-table" /></td>
           <td><b>Abarrotes</b></td>
+        </tr>
+
+        <tr>
+          <td><img src={congeladosPng} alt="ice-cube" className="img-table" /></td>
+          <td><b>Congelados</b></td>
         </tr>
         
       </table>
@@ -219,7 +228,7 @@ const Slider = ({ dataSlider, panelInfo }) => {
       {panelInfo !== 'promotions' & panelInfo !== 'heroEmpleos2' && <div className='lineDecoration'></div>}
       
       {panelInfo === 'heroEmpleos2' && 
-        <img src="https://i.ibb.co/KL0DS1f/Logo-Tango-2.png"
+        <img src={tangoLogoEmpleo}
         alt="Tango logo" className='tangoLogo-empleos'/> }
 
     </section>

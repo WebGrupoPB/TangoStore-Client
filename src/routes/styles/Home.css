@@ -86,7 +86,7 @@ header {
 
 
 .food-section {
-  background-image: url('https://i.ibb.co/Mf3Lp7m/fondo-sin-fondo-2.png');
+  background-image: url('../../public/home/promociones-bg.png');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -861,12 +861,12 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 45vh;
+    height: 50vh;
   }
   
   .hero-slider{
     width: 95%;
-    height: 40vh;
+    height: 45vh;
   }
 
   .ver-menu{

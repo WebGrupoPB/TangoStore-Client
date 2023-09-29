@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './AnuncioPopup.css'
 
-import imageAdd from "../../public/popUpAdd.jpeg"
+import imageAdd from "../../public/home/popUpAdd.jpeg"
 import logOutIcon from "../assets/icons/Logout Rounded.png"
 
 
