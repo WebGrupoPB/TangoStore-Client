@@ -82,10 +82,6 @@ width: 3rem;
 height: 3rem;
 }
 
-.whatsappIcon {
-width: 3.25rem !important;
-height: 3.25rem !important;
-}
 
 .whatsappIcon {
   width: 3.25rem !important;
@@ -182,6 +178,11 @@ border-left: 20px solid #fff; /* Lado inferior sólido (el color define el color
   height: 5rem;
 }
 
+.whatsappIcon {
+  width: 5.5rem !important;
+  height: 5.5rem !important;
+  }
+
 .bubbleChat {
   position: absolute;
   bottom: 12%;
@@ -264,6 +265,12 @@ border-left: 20px solid #fff; /* Lado inferior sólido (el color define el color
   width: 2.3rem;
   height: 2.3rem;
 }
+
+.whatsappIcon {
+  width: 2.75rem !important;
+  height: 2.75rem !important;
+}
+
 
 .bubbleChat {
   position: absolute;

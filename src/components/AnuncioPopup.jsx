@@ -4,7 +4,7 @@ import './AnuncioPopup.css'
 
 import imageAdd from "../../public/home/popUpAdd.jpeg"
 import logOutIcon from "../assets/icons/Logout Rounded.png"
-
+import logOutBtnIcon from "../assets/icons/logout-btn.svg"
 
 
 const Popup = ({ handleClosePopup }) => {
@@ -16,7 +16,7 @@ const Popup = ({ handleClosePopup }) => {
               <img src={imageAdd} alt="imagen-anuncio" />
 
               <div className='closeSpace' onClick={handleClosePopup}>
-                <img src={logOutIcon} alt="logout-icon" />
+                <img src={logOutBtnIcon} alt="logout-icon" />
               </div>
             </div>
           </div>

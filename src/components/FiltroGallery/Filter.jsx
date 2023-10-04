@@ -52,7 +52,7 @@ const Filter = ({ activeFilter, handleFilterClick }) => {
       img: `${lasagna}`, 
     },
     { 
-      id: 'pollos', 
+      id: 'pollo', 
       name: 'Pollo', 
       img: `${pollo}`, 
     },

@@ -8,7 +8,7 @@ import facebookBtn from "../assets/icons/Facebook Circled.png"
 import GoogleMapsBtn from "../assets/icons/Google Maps Old.png"
 import squareclock from "../assets/icons/Square Clock.png"
 import submitBtn from "../assets/icons/submitBtn.png"
-import tangoFooter from "../../public/logo tango footer.png"
+import tangoFooter from "../../public/general/logo tango footer.png"
 
 
 const Footer = () => {

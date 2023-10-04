@@ -50,6 +50,10 @@ aside.panel {
 	opacity: 0.8;
 	transition: background 700ms ease-in-out;
 
+	display: flex;
+	align-items: start;
+	justify-content: center;
+
 	
 	div.redesEmpleo {
         /* background-color: rgba(0, 0, 0, 1) !important; */
@@ -110,6 +114,12 @@ aside.panel {
   		-webkit-text-stroke-color: #fff;
 	}
 	
+	div.heroHomeDiv {
+		position: relative;
+		top: 12vh;
+	}
+
+
 	h2.panel-header,
 	p.panel-info {
 		color: #000;
@@ -231,7 +241,7 @@ div.lineDecoration {
 	
 		h2.panel-header {
 			color: #000;
-			padding-top: 1em;
+			/* padding-top: 1em; */
 			padding-bottom: .75em;
 			font: {
 				weight: bolder;
@@ -359,7 +369,7 @@ div.lineDecoration {
 	
 		h2.panel-header {
 			color: #000;
-			padding-top: 1em;
+			/* padding-top: 1em; */
 			padding-bottom: 1em;
 			font: {
 				weight: bolder;
@@ -481,6 +491,11 @@ div.lineDecoration {
 			-webkit-text-stroke-width: 2px; /* Ajusta el valor según tus preferencias */
 			  -webkit-text-stroke-color: #fff;
 		}
+
+		div.heroHomeDiv {
+			position: relative;
+			top: 0vh;
+		}
 		
 		h2.panel-header,
 		p.panel-info {
@@ -517,6 +532,7 @@ div.lineDecoration {
 			height: auto;
 		} */
 	}
+
 
 	div.lineDecoration { 
 		position: absolute;

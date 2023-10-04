@@ -18,12 +18,6 @@ import autoGo from "../../public/home/AutoGo_logo.png"
 import grabGo from "../../public/home/Grab&Go_logo.png"
 
 
-import shakePromo1 from "../../public/home/slider2/Promociones-shake1.png"
-import shakePromo2 from "../../public/home/slider2/Promociones-shake2.png"
-import pizzaPromo1 from "../../public/home/slider2/Promociones-pizza1.png"
-import pizzaPromo2 from "../../public/home/slider2/Promociones-pizza2.png"
-
-
 import iconTango1 from "../../public/home/Iconos_tango1.png"
 import iconTango2 from "../../public/home/Iconos_tango2.png"
 import iconTango3 from "../../public/home/Iconos_tango3.png"
@@ -37,19 +31,19 @@ import iconTango4 from "../../public/home/Iconos_tango4.png"
 const dataHero = [
   {
     id: 0,
-    img: 'https://i.ibb.co/gTvX3TP/3.png',
+    img: 'https://s3.amazonaws.com/tango.store/home/slider1/slider-home1.png',
   },
   {
     id: 1,
-    img: 'https://i.ibb.co/HXcj1Rr/2.png',
+    img: 'https://s3.amazonaws.com/tango.store/home/slider1/slider-home2.png',
   },
   {
     id: 2,
-    img: 'https://i.ibb.co/cyFhzSc/4.png',
+    img: 'https://s3.amazonaws.com/tango.store/home/slider1/slider-home3.png',
   },
   {
     id: 3,
-    img: 'https://i.ibb.co/4VKLHbd/5.png',
+    img: 'https://s3.amazonaws.com/tango.store/home/slider1/slider-home4.png',
   },
 ];
 
@@ -57,22 +51,22 @@ const dataPromotions = [
   {
     id: 0,
     text: "¡Prueba nuestros nuevos Milk shake!",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/Promociones-shake1.png",
+    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-shake1.png",
   },
   {
     id: 1,
     text: "Milk Shake de Fresa, Chocolate y Chicle",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/Promociones-shake2.png",
+    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-shake2.png",
   },
   {
     id: 2,
     text: "Disfruta de nuestras deliciosas pizzas Carnívora y Lomito",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/Promociones-pizza2.png",
+    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-pizza1.png",
   }, 
   {
     id: 3,
     text: "Disfruta de nuestras deliciosas pizzas Veggie y Chipotle",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/Promociones-pizza1.png",
+    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-pizza2.png",
   },
 ];
 
@@ -117,9 +111,9 @@ const Home = () => {
 
         
         {/* Mostrar el Popup si showPopup es verdadero */}
-        {/* {showPopup && (
+        {showPopup && (
           <Popup handleClosePopup={handleClosePopup} />
-        )} */}
+        )}
 
         <div className='hero-space' id="hero-space">
           <section className='hero-slider'>
@@ -217,7 +211,8 @@ const Home = () => {
             </div>
 
             <div className='iframe-AutoGo'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/8XhXJ3FF0sE?si=jN0aloNYmk_K2ntN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoAutoGo'></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Zk36t5UAxhw?si=am4-dkfaHGgM_NuH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className='videoAutoGo'></iframe>
+
             </div>
 
           </div>

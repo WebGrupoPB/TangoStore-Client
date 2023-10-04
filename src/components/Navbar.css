@@ -193,6 +193,10 @@
   .menuMovil .navbar-links a{    
     font-size: 0.85rem;
   }
+
+  .menuMovil .navbar-links {    
+    gap: 2rem;
+  }
 }
 
 /*************** Pantallas tABLET L, altura 1350px *******************/

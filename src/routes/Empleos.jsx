@@ -17,7 +17,7 @@ import fondoPlaza2 from "../../public/empleos/plazaImg2.png"
 const dataHero1 = [
   {
     id: 0,
-    img: 'https://i.ibb.co/4VKLHbd/5.png',
+    img: 'https://s3.amazonaws.com/tango.store/home/slider1/slider-home4.png',
   },
 ];
 
@@ -25,14 +25,14 @@ const dataHero1 = [
 const dataHero2 = [
   {
     id: 0,
-    img: '../../public/empleos/arbusto-verde.jpg',
+    img: 'https://s3.amazonaws.com/tango.store/empleos/arbusto-verde.jpg',
   },
 ];
 
 
 const dataCards1 = [
   {
-      img: '../../public/empleos/empleoPerfil.png',
+      img: 'https://s3.amazonaws.com/tango.store/empleos/empleoPerfil.png',
       puesto: 'DEPENDIENTE DE TIENDA ',
       description: 'Encargados de caja, preparación de alimentos, rotación de productos en cámaras frías y góndolas, limpieza de tienda.',
       urlJob: 'https://docs.google.com/forms/d/e/1FAIpQLSfI_2Hhj53XtbI9LwLUMTH1zHOqk9x2_kt9_RgNEFFr8QhTQg/viewform',
@@ -41,10 +41,10 @@ const dataCards1 = [
 
 const dataCards2 = [
   {
-      img: '../../public/empleos/tangoPerfil.png',
+      img: 'https://s3.amazonaws.com/tango.store/empleos/tangoPerfil.png',
       puesto: 'PRÓXIMAMENTE',
       description: 'En un futuro se habilitaran nuevas plazas',
-      urlJob: 'https://i.ibb.co/KL0DS1f/Logo-Tango-2.png',
+      urlJob: '',
   },
 ];
 

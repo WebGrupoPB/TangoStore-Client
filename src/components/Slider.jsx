@@ -16,7 +16,7 @@ import tangoLogoEmpleo from "../../public/empleos/tango-logo-empleo.png"
 
 // este componente define el contenido del panel, Slider 1 (Hero del Home Page)
 const InfoHeroHome = () => ( 
-  <div>
+  <div className='heroHomeDiv'>
 
     <h2 className="panel-header"><strong>Tiendas Tango</strong></h2>
 
@@ -135,6 +135,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
 
       styles = {
         left: '0',
+        display: 'inline',
       };
 
       if (window.innerWidth <= 600) {
@@ -165,6 +166,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
     };
   }, [panelInfo]);
 
+
   return (
     <aside className="panel" style={panelStyle}>
 
@@ -188,13 +190,40 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
 
 const Slider = ({ dataSlider, panelInfo }) => {
 
+  
+
 
   // defineel background img inicial del slider
   const [activeID, setActiveID] = useState(0);
   const [wrapperStyle, setWrapperStyle] = useState({
     backgroundImage: `url('${dataSlider[0].img}')`,
+    
   });
 
+  const updateWrapperStyle = () => {
+    let styles = {
+      backgroundImage: `url('${dataSlider[activeID].img}')`,
+    };
+  
+    if (panelInfo === 'heroHome') {
+      styles.backgroundSize = '100% 100%';
+    } 
+    
+  
+    setWrapperStyle(styles);
+  };
+
+    
+     // Llama a la función para actualizar los estilos cuando cambie panelInfo
+  useEffect(() => {
+    updateWrapperStyle();
+    window.addEventListener('resize', updateWrapperStyle);
+
+    return () => {
+      window.removeEventListener('resize', updateWrapperStyle);
+    };
+  }, [panelInfo]);
+  
 
   // cambia el background del slider por el id
   const changeActive = (id) => {

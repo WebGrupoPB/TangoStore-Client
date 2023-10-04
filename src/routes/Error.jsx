@@ -18,7 +18,7 @@ const Error = () => {
         <Decoradores />
 
         <aside className='errorSpace'>
-            <img src="https://i.ibb.co/cQkcXBj/Error.png" alt="error-img" />
+            <img src="https://s3.amazonaws.com/tango.store/general/Error_page-img.png" alt="error-img" />
         </aside>
 
         <footer className='footerError'>

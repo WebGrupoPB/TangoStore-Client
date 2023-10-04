@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import paidSvg from '../assets/icons/Paid.svg';
 import './Navbar.css';
 
-import tangoNavbar from "../../public/Logo Tango navbar.png"
+import tangoNavbar from "../../public/general/Logo Tango navbar.png"
 
 
 
