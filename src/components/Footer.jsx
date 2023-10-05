@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './/Footer.css';
-export const API_SERVER = 'https://pp22zdc1y9.execute-api.us-east-1.amazonaws.com/prod';
+export const API_SERVER = 'https://iqe7dlsbq0.execute-api.us-east-1.amazonaws.com/prod-tango';
 
 
 import instagramBtn from "../assets/icons/Instagram Circle.png"
@@ -13,43 +13,42 @@ import tangoFooter from "../../public/general/logo tango footer.png"
 
 const Footer = () => {
 
-    const [formData, setFormData] = useState({
-            email: '',
-            phone: '',
-            message: '',
-        });
+    const initialFormData = {
+        email: '',
+        phone: '',
+        message: '',
+    };
 
-        const handleSubmit = async (e) => {
-            e.preventDefault();
-        
-            try {
-                const response = await fetch(API_SERVER + '/enviar-comentario', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(formData)
-                });
-        
-                if (response.ok) {
-                    // Manejar la respuesta exitosa aquí
-                    console.log('Comentario enviado con éxito');
-        
-                    // Restablecer el formulario borrando los datos
-                    setFormData({
-                        email: '',
-                        phone: '',
-                        message: ''
-                    });
-                } else {
-                    // Manejar errores aquí
-                    console.error('Error al enviar comentario');
-                }
-            } catch (error) {
-                console.error('Error al enviar comentario', error);
+    const [formData, setFormData] = useState(initialFormData);
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+            const response = await fetch(API_SERVER + '/enviar-comentario', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+    
+            if (response.ok) {
+                // Manejar la respuesta exitosa aquí
+                console.log('Comentario enviado con éxito');
+    
+                // Restablecer el formulario borrando los datos
+                setFormData(initialFormData);
+            } else {
+                // Manejar errores aquí
+                console.error('Error al enviar comentario');
             }
-        };
-        
+        } catch (error) {
+            console.error('Error al enviar comentario', error);
+        }
+    };
+    
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -58,6 +57,13 @@ const Footer = () => {
             [name]: value
         });
     };
+
+
+    const handleReset = () => {
+        handleSubmit
+        setFormData(initialFormData);
+    };
+
 
 
     return (
@@ -115,7 +121,7 @@ const Footer = () => {
                                 onChange={handleChange}
                             />
                             <button type='submit'>
-                                <img src={submitBtn} alt="submit" />
+                                <img src={submitBtn} alt="submit"  />
                             </button>
                         </div>
                         <textarea
