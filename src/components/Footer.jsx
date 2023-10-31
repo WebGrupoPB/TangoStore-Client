@@ -33,6 +33,8 @@ const Footer = () => {
                 },
                 body: JSON.stringify(formData)
             });
+
+            console.log("se enviaron los datos, antes del if")
     
             if (response.ok) {
                 // Manejar la respuesta exitosa aquí
@@ -43,9 +45,11 @@ const Footer = () => {
             } else {
                 // Manejar errores aquí
                 console.error('Error al enviar comentario');
+                setFormData(initialFormData);
             }
         } catch (error) {
             console.error('Error al enviar comentario', error);
+            setFormData(initialFormData);
         }
     };
     
@@ -60,9 +64,9 @@ const Footer = () => {
 
 
     const handleReset = () => {
-        handleSubmit
         setFormData(initialFormData);
     };
+    
 
 
 

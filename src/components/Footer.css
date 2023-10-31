@@ -120,7 +120,7 @@ footer {
 
 
 /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
-@media (min-width: 1441px) {  
+@media (min-width: 2000px) {  
     footer p {
         font-size: 2rem;
       }

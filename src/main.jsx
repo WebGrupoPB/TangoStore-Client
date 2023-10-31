@@ -6,6 +6,7 @@ import Empleos from './routes/Empleos.jsx'
 import Prueba from './routes/Prueba.jsx'
 import Menu from './routes/Menu.jsx'
 import Error from './routes/Error.jsx'
+import MenuPDF from './routes/MenuPDF.jsx'
 import './index.css'
 
 import * as ReactDOM from "react-dom/client";
@@ -25,13 +26,13 @@ import {
     element: <Empleos />,
   },
   {
-    path: "/menu",
+    path: "/productos",
     element: <Menu />,
   },
- /*  {
-    path: "/prueba",
-    element: <Prueba />,
-  }, */
+  {
+    path: "/menu",
+    element: <MenuPDF />,
+  },
 
  ]); 
 

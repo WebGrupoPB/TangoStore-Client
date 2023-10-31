@@ -89,7 +89,7 @@ header {
 
 
   /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
-@media (min-width: 1441px) {
+@media (min-width: 2000px) {
 
   .plazasDisponibles {
     /* background-color: red; */

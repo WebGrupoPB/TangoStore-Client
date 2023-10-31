@@ -267,7 +267,7 @@ const Menu = () => {
 
         <div className='filtro-container'>
           <aside className='filtroSpace'>
-              <h1>Menú</h1>  
+              <h1>Productos</h1>  
               <span><h5>Filtro</h5> <img src={filtroImg} alt="filtro-img" /></span>
               <div className='filtroMenu'>
                 <Filter activeFilter={activeFilter} handleFilterClick={handleFilterClick} />

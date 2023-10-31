@@ -139,7 +139,7 @@ border-left: 20px solid #fff; /* Lado inferior sólido (el color define el color
 
 
 /*************** Pantallas Desktop/Tv o mayores 1440px *******************/
-@media (min-width: 1441px) {
+@media (min-width: 2000px) {
 .text-square {
   width: 2.5rem;
   height: 32rem;
