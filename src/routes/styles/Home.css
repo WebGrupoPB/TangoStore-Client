@@ -38,11 +38,15 @@ header {
   height: 60vh;
   position: absolute;
   right: 0;
+
+  padding: 5vh 0;
+  overflow: hidden;
 }
 
-.tango-fondo img {
+.tango-fondo img { 
   position: absolute;
-  right: 0;
+  top: 0;
+  right: -8vw;
   width: 60vw;
   height: auto;
 }
@@ -915,6 +919,27 @@ header {
 
   .tango-fondo img {
     width: 150%;
+    height: auto;
+  }
+
+  .tango-fondo {
+    /* background-image: url('https://i.ibb.co/99tYHPb/estampado-tango.png');
+    background-size: cover; */
+    width: 60%;
+    height: 60vh;
+    position: absolute;
+    right: 0;
+  
+    padding: 5vh 0;
+    overflow: hidden;
+  }
+  
+  .tango-fondo img { 
+    margin-top: 5vh;
+    position: absolute;
+    top: 0;
+    right: -4vw;
+    width: 60vw;
     height: auto;
   }
 

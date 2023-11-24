@@ -50,24 +50,19 @@ const dataHero = [
 const dataPromotions = [
   {
     id: 0,
-    text: "¡Prueba nuestros nuevos Milk shake!",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-shake1.png",
+    text: "¡Prueba nuestro combo navideño!",
+    img: "https://s3.amazonaws.com/tango.store/general/temporadaNavide%C3%B1a/sliderpromo-1.png",
   },
   {
     id: 1,
-    text: "Milk Shake de Fresa, Chocolate y Chicle",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-shake2.png",
+    text: "Frappé chocomenta el sabor de la Navidad",
+    img: "https://s3.amazonaws.com/tango.store/general/temporadaNavide%C3%B1a/sliderpromo-2.png",
   },
   {
     id: 2,
-    text: "Disfruta de nuestras deliciosas pizzas Carnívora y Lomito",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-pizza1.png",
+    text: "Un croissant, una explosión de sabor en cada mordida",
+    img: "https://s3.amazonaws.com/tango.store/general/temporadaNavide%C3%B1a/sliderpromo-3.png",
   }, 
-  {
-    id: 3,
-    text: "Disfruta de nuestras deliciosas pizzas Veggie y Chipotle",
-    img: "https://s3.amazonaws.com/tango.store/home/slider2/promo-pizza2.png",
-  },
 ];
 
 
@@ -111,9 +106,9 @@ const Home = () => {
 
         
         {/* Mostrar el Popup si showPopup es verdadero */}
-        {showPopup && (
+        {/* {showPopup && (
           <Popup handleClosePopup={handleClosePopup} />
-        )}
+        )} */}
 
         <div className='hero-space' id="hero-space">
           <section className='hero-slider'>
@@ -134,7 +129,7 @@ const Home = () => {
           </div>
 
           <div className='tango-fondo'>
-            <img src={chilliDog} alt="tandog" loading='lazy' />
+            <img src="https://s3.amazonaws.com/tango.store/general/temporadaNavide%C3%B1a/verMenu-img.png" alt="tandog" loading='lazy' />
           </div>     
 
         </section>

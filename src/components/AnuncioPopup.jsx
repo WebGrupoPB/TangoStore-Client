@@ -13,7 +13,7 @@ const Popup = ({ handleClosePopup }) => {
 
           <div className='addSpace' onClick={handleClosePopup}>
             <div className='popUpAdd'>
-              <img src={imageAdd} alt="imagen-anuncio" />
+              <img src="https://s3.amazonaws.com/tango.store/general/temporadaNavide%C3%B1a/Pop+tango+navidad.png" alt="imagen-anuncio" />
 
               <div className='closeSpace' onClick={handleClosePopup}>
                 <img src={logOutBtnIcon} alt="logout-icon" />

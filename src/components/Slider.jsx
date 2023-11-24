@@ -101,6 +101,8 @@ const InfoPromociones = ( { dataSlider } ) => (
 
 const Panel = ({ panelInfo, dataSlider, activeID }) => {
 
+  const panelClassName = `panel${panelInfo ? `-for${panelInfo}` : ''}`;
+
   // Define un estado para los estilos del panel
   const [panelStyle, setPanelStyle] = useState({
     // Define los estilos iniciales del panel aquí
@@ -114,7 +116,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
     if (panelInfo === 'promotions') {
 
       styles = {   
-        right: '5vw',
+        right: '1vw',
         backgroundColor: 'transparent',
         opacity: '1',
         width: '50vw',
@@ -123,7 +125,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
       if (window.innerWidth <= 600) {
         styles = {  
           position: 'absolute', 
-          right: '-40vw',
+          right: '-50vw',
           backgroundColor: 'transparent',
           opacity: '1',
           width: '50vw',
@@ -144,16 +146,10 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
           left: '0',
           marginTop: '5vh',
         };
-      } 
-      
-      
-
-     
+      }      
     }
-
-    
-    setPanelStyle(styles);
-    
+   
+    setPanelStyle(styles);   
   };
 
   // Llama a la función para actualizar los estilos cuando cambie panelInfo
@@ -190,7 +186,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
 
 const Slider = ({ dataSlider, panelInfo }) => {
 
-  
+  const wrapperClassName = `wrapper${panelInfo ? `-for${panelInfo}` : ''}`;
 
 
   // defineel background img inicial del slider
@@ -249,7 +245,7 @@ const Slider = ({ dataSlider, panelInfo }) => {
 
 
   return (
-    <section className="wrapper" style={wrapperStyle}>
+    <section className={wrapperClassName} style={wrapperStyle}>
       {activeID !== undefined && (
       <Panel dataSlider={dataSlider} panelInfo={panelInfo} activeID={activeID} />
     )}
