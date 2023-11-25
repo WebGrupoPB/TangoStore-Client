@@ -70,6 +70,7 @@ header {
 
 .text-tandog a {
   text-decoration: none;
+  z-index: 100;
 }
 
 
@@ -129,10 +130,11 @@ header {
   font-size: 1.3rem;
 }
 
-.ubi-info a {
+.ubi-info > div > a {
   width: 10.5rem;
   height: 3rem;
   text-decoration: none;
+  z-index: 100;
 }
 
 .ubi-info span {
@@ -150,6 +152,7 @@ header {
   font-size: 1rem;
   font-weight: bolder;
   text-decoration: none;
+  z-index: 100;
 }
 
 .ubi-info span img {
@@ -204,6 +207,7 @@ header {
   /* background-color: blue; */
   width: 55%;
   height: 60vh;
+  z-index: 100;
 }
 
 .GrabGo-div .videoGrabgo {
@@ -301,6 +305,7 @@ header {
   /* background-color: blue; */
   width: 55%;
   height: 60vh;
+  z-index: 100;
 }
 
 .AutoGo-div .videoAutoGo {

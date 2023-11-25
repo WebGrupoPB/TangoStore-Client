@@ -12,7 +12,7 @@ const Snow = () => {
   };
 
   return (
-    <div style={{ height: '730vh', width: '100%', position: 'absolute', top: '0', zIndex: '500'  }}>
+    <div style={{ height: '700vh', width: '100%', position: 'absolute', top: '0', zIndex: '50'  }}>
       <Snowfall {...snowfallProps} />
     </div>
   );
