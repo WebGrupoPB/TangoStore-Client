@@ -5,6 +5,7 @@ import Slider from '../components/Slider'
 import Footer from '../components/Footer';
 import Decoradores from '../components/Decoradores';
 import Popup from '../components/AnuncioPopup';
+import Galleria from '../components/Carrusel';
 import Snow from '../components/snow';
 import './styles/Home.css';
 
@@ -119,10 +120,7 @@ const Home = () => {
             <Slider dataSlider={dataHero} panelInfo='heroHome' />
 
           </section>
-        </div>
-
-        
-        
+        </div>      
 
         <section className='ver-menu'>
 
@@ -135,6 +133,10 @@ const Home = () => {
             <img src="https://s3.amazonaws.com/tango.store/general/temporadaNavide%C3%B1a/verMenu-img.png" alt="tandog" loading='lazy' />
           </div>     
 
+        </section>
+
+        <section className='carrusel-puntosTango'>
+          <Galleria />
         </section>
 
         <section className='food-section' id='promociones'>

@@ -35,7 +35,7 @@ left: 0.5rem;
 display: flex;
 align-items: center;
 justify-content: center;
-z-index: 2;
+z-index: 200;
 }
 
 .text-square span {
@@ -53,7 +53,7 @@ height: 16rem;
 position: fixed;
 top: 40vh;
 left: 0;
-z-index: 2;
+z-index: 200;
 }
 
 .social-media { 
