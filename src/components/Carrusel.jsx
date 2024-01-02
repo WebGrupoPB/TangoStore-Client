@@ -9,7 +9,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 const slidesData = [
   'https://s3.amazonaws.com/tango.store/Puntos+Tango/carruselPuntosTango-img1.png',
-  'https://s3.amazonaws.com/tango.store/Puntos+Tango/carruselPuntosTango-img2.png',
+  /* 'https://s3.amazonaws.com/tango.store/Puntos+Tango/carruselPuntosTango-img2.png', */
 ];
 
 
@@ -39,7 +39,7 @@ const Galleria = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Swiper
+      {/* <Swiper
         onSwiper={(swiper) => (thumbsSwiper.current = swiper)} //opcion de useRef
         loop={true}
         spaceBetween={10}
@@ -55,7 +55,7 @@ const Galleria = () => {
             <img src={image} alt={`Thumb ${index + 1}`} className='mySwiper1-img'/>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </>
   );
 };

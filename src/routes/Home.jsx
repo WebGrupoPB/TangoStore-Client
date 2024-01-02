@@ -103,16 +103,13 @@ const Home = () => {
       </header>
 
       <main>
-
-        <Snow />
-        
         <Decoradores />
 
         
         {/* Mostrar el Popup si showPopup es verdadero */}
-        {showPopup && (
+        {/* {showPopup && (
           <Popup handleClosePopup={handleClosePopup} />
-        )}
+        )} */}
 
         <div className='hero-space' id="hero-space">
           <section className='hero-slider'>
